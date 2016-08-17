@@ -101,7 +101,7 @@ Note: OSM = OpenStreetMap.</em>
 
 ### Open Cities Dhaka – Building Survey Form
 
-Surveyor Name: _________________________________________________________  &nbsp; Date: _____________
+Surveyor Name: ____________________________________________  &nbsp; Date: _____________
 
 Field Paper ID: _________  &nbsp; Ward / Block number:  _________  &nbsp; Map Building ID: _________ 
 
@@ -126,7 +126,7 @@ Street name: ___________________________________________________________
     <img src="/images/posts/appendixes/6-2_Building-Characteristics.jpg" alt="Building-Characteristics">
 </div>
 
-<b>2.7 Visible Physical Condition (Crake, Damp, Spoiling): &nbsp; a) Poor &nbsp; b) Average &nbsp; c) Good</b>
+2.7 Visible Physical Condition (Crake, Damp, Spoiling): &nbsp; a) Poor &nbsp; b) Average &nbsp; c) Good
 
 Notes:
 
@@ -261,7 +261,6 @@ many factors that go into developing an efficient, effective process.
         <li>Ensure reliable Internet connectivity</li>
         <li>List the equipment you need and acquire it</li>
     </ul>
-</div></p>
 </div></p>
   <p><b>Training</p></b>
 <p><div class="c-list">
