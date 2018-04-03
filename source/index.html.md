@@ -2,7 +2,6 @@
 title: ThinkHazard! Methods
 
 toc_footers:
-  - <div class="m-language"><select id="language-selector" name="language"><option value="en" selected>English</option><option value="es">Español</option></select></div>
   - <p>This guide is hosted on github under a public domain license. The original work is a product of <a target="_blank"  href="https://www.thinkhazard.org">GFDRR ThinkHazard! project</a>.</p>
   - <a href="download/thinkhazard-methodology-report_v2_0.pdf" download="thinkhazard-methodology-report_v2_0.pdf" class="btn -black">Download PDF</a>
 
