@@ -1,3 +1,8 @@
+This repo contains the documented methodology for GFDRR hazard screening tool, 'ThinkHazard!' (https://github.com/GFDRR/thinkhazard/; http://www.thinkhazard.org)
+
+The repo was cloned from https://github.com/GFDRR/community-mapping, a GitHub pages site developed for GFDRR OpenDRI project, and is under development to convert it to ThinkHazard! methodology.
+The original repo was developed using the following tools.
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/lord/img/master/logo-slate.png" alt="Slate: API Documentation Generator" width="226">
   <br>
