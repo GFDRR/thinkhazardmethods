@@ -1,5 +1,5 @@
 <div class="c-box-image">
-  <img src="images/posts/introduction/chapterpic-intro-2.jpg" alt="chapterpic-intro"/>
+  <img src="images/posts/introduction/ThinkHazard.png" alt="ThinkHazard"/>
 </div>
 
 # Introduction
