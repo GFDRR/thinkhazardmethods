@@ -6,9 +6,8 @@ toc_footers:
   - <a href="download/thinkhazard-methodology-report_v2_0.pdf" download="thinkhazard-methodology-report_v2_0.pdf" class="btn -black">Download PDF</a>
 
 includes:
-  - posts/01-summary
-  - posts/02-introduction
-  - posts/03-classifying_hazard_levels
+  - posts/_01-introduction
+  - posts/_03-classifying_hazard_levels
   - posts/04-communication_of_hazard_levels
   - posts/05-risk_management_guidance
   - posts/06-other_tool_features
