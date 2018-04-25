@@ -8,7 +8,8 @@ toc_footers:
 includes:
   - posts/_01-introduction
   - posts/_03-classifying_hazard_levels
-  - posts/04-communication_of_hazard_levels
+  - posts/_04-drrguidance
+  
   - posts/05-risk_management_guidance
   - posts/06-other_tool_features
   - posts/07-architecture_tech_workflow
