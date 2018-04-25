@@ -6,6 +6,7 @@ The four hazard levels are derived from hazard maps, which present the spatial d
   <img src="images/posts/hazarddata/sharemap.png" alt="An earthquake hazard map for Europe (from the SHARE project). Hazard is shown as expected peak ground acceleration (PGA) with a 10% chance of being exceeding in a 50-year interval (return period of 475 years)"/>
 </div>
 
+
 Hazard levels can be described as:
 •	High: Users should be highly aware of potentially severe damage from this hazard for the project location. Without taking measures to mitigate the hazard and risk, high levels of damage can be expected to occur within the project or human lifetime (and potentially frequently in that timeframe, for hydro-meteorological hazards, e.g., floods, extreme heat). 
 
@@ -61,7 +62,7 @@ To do this, we first identify an intensity level for each hazard, above which da
 Frequency of a hazard intensity being exceeded can be defined in terms of average recurrence interval, or return period, expressed as ‘1 in 100 years’, or the ‘100-year return period’. Alternatively, this can be expressed as the chance of the intensity value being exceeded on an annual basis: for the 100-year return period hazard this would be 1% chance of exceedance in any given year (1.0% = 1/100); for the 500-year return period this is 0.2% (0.2% = 1/500). This report uses return period as the reference to frequency. Longer return periods correspond to having a smaller chance that the damaging intensity will be exceeded during the reference timeframe lifetime, hence the risk of damage is lower.
  
 <div class="c-box-image">
-  <img src="images/posts/hazarddata/thscreens.png" alt="Comparison of Think Hazard frequency-based approach, and common intensity-based approach"/>
+  <img src="images/posts/hazarddata/approach.png" alt="Comparison of Think Hazard frequency-based approach, and common intensity-based approach"/>
 </div>
 
 #### Classification steps
