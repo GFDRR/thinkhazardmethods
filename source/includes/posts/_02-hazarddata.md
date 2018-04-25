@@ -85,18 +85,19 @@ The three intensity thresholds for a hazard can be identical across the hazard l
 
 Hazard data for the same hazard may be provided with different intensity units. For example, earthquake ground acceleration can be provided in gal, g as a decimal, or g as a percentage. Flood depth may be provided in m, cm, or dm (decimeter). The unit for each data layer is defined in its metadata, and ThinkHazard! classifies the data according to the correct unit.
 
-Table 1 A summary of damaging intensity parameters, units and thresholds used in the classification of probabilistic data (only one common unit shown for hazard)
-Hazard	Intensity parameter	Intensity Unit 	Intensity threshold value
-			High	Medium	Low
-Earthquake	Acceleration (PGA)	g	0.2	0.1	0.1
-Extreme heat 	Wet Bulb Globe Temperature (WBGT)	Degrees C	32	28	25
-River flood*	Inundation depth	m	0.5	0.5	0.5
-Urban flood*	Inundation depth	m	0.5	0.5	0.5
-Coastal flood	Inundation depth 	m	2	0.5	0.5
-Cyclone	Mean wind speed	km/h	80	80	80
-Tsunami	Coastal maximum amplitude	m	2	1	0.5
-Water scarcity	Water availability	m3/capita/yr	<=500	<=1000	<=1700
-Wildfire	Canadian Fire Weather Index 	FWI	30	20	15
+A summary of damaging intensity parameters, units and thresholds used in the classification of probabilistic data (only one common unit shown for hazard):
+
+| Hazard | Intensity parameter | Intensity Unit | Intensity threshold value |
+|        |                     | 	            | High | Medium | Low| 
+|Earthquake | Acceleration (PGA) | g | 0.2 | 0.1 | 0.1 |
+|Extreme heat | Wet Bulb Globe Temperature (WBGT)	Degrees C	32	28	25|
+|River flood* | 	Inundation depth | m | 0.5 | 0.5 | 0.5|
+|Urban flood*	 | Inundation depth | m	0.5 | 0.5 | 0.5|
+|Coastal flood	 | Inundation depth | m	2 | 0.5 | 0.5|
+|Cyclone | Mean wind speed | km/h | 80 | 80 | 80|
+|Tsunami | Coastal maximum amplitude | m | 2 | 1 | 0.5|
+|Water scarcity | Water availability | m3/capita/yr | <=500 | <=1000 | <=1700|
+|Wildfire | Canadian Fire Weather Index | FWI | 30 | 20 | 15|
 
 * Although river flood and urban flood data are provided as probabilistic data, it was found in ThinkHazard! version 1 that use of a damaging intensity alone overestimates high hazard (it is common for flood data to have a very small number of cells attributed to high hazard, which overestimate the hazard for the whole ADM2 Unit). Therefore, it was decided to use an additional spatial assessment in a pre-processing stage, to classify hazard based on a minimum area exceeding the damaging threshold. Further information is given in section 8.1.
 
@@ -107,18 +108,18 @@ Return periods may vary depending on the source of the data: earthquake data are
 
 ThinkHazard! uses the return periods given in Table 3Error! Reference source not found. to classify hazard based on probabilistic data. A value range indicates the maximum range that can be used in the calculation. The administrator can determine the exact return period used by including (or excluding) certain return periods from data storage and import to ThinkHazard!. 
 
-Table 2 Suggested return periods for each hazard classified from probabilistic data
-Hazard	Return period (years)
-	High	Medium	Low
-Earthquake	100 - 250	475 - 500	1000 - 2500 
-Extreme heat 	5	20	100
-River flood	10	50	1000
-Urban flood	10	50	1000
-Coastal flood	10	50	100
-Cyclone	50	100	1000
-Tsunami	100	500	2500
-Water scarcity 	5	50	1000
-Wildfire	2	10	30
+Suggested return periods for each hazard classified from probabilistic data:
+Hazard|	Return period (years)|
+	High	|Medium|	Low
+Earthquake|	100 - 250|	475 - 500|	1000 - 2500 
+Extreme heat |	5|	20|	100
+River flood	|10	|50	|1000
+Urban flood	|10	|50|	1000
+Coastal flood|	10	|50	|100
+Cyclone	|50|	100|	1000
+Tsunami|	100|	500|	2500
+Water scarcity| 	5|	50	|1000
+Wildfire|	2	|10	|30
 
 ### Pre-processed data
 Preprocessing of data into a format suitable for ThinkHazard! may be needed if:
