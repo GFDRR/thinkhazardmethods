@@ -19,7 +19,7 @@ Such maps contain valuable information about earthquake hazard, but rely on spec
 </div>
 
 
-# Hazard coverage
+## Hazard coverage
 The following hazards are implemented in ThinkHazard! version 1 : 
 1.	River Flood (FL): Overflow of a body of water (river, lake) that submerges land otherwise not normally inundated.
 
@@ -36,3 +36,13 @@ The following hazards are implemented in ThinkHazard! version 1 :
 7.	Volcanic (VO): Volcanoes are vents in the surface of the Earth through which magma and associated gases erupt, and the resulting structures that are produced by the erupted material. Volcanic hazard comprises proximal hazards such as ballistics, lava, lahars and debris flows, in addition to the more distal effects of volcanic ash fall.
 
 8.	Landslide (LS): The movement of a mass of rock, debris, or earth down a slope. These encompass events such as rock falls, topples, slides, spreads, and flows, such as debris flows commonly referred to as mudflows or mudslides. Landslides can be initiated by disturbance and change of a slope due to rainfall, earthquakes, volcanic activity, changes in groundwater, man-made construction activities, or any combination of these factors.
+
+## Global and local data
+ThinkHazard! is flexible in the extent of data it uses. Data are considered ‘global’ if they cover the entire earth, and ‘local’ if their coverage is limited to a given number of administrative divisions. ‘Local’ data includes data that cover a region, i.e., several countries. 
+	
+The coverage of a local datasets is taken into account into the processing following three steps, aiming at limiting hazard categorization to administrative units where there is actually data:
+1.	Screening of the bounding box of the raster and selection of the administrative units that intersects the bounding box,
+2.	If one administrative unit is only covered by no-data pixels, it is excluded from the selection,
+3.	Mapping procedure (see 5.1.3) is applied on each administrative unit of the selection.
+
+The data coverage map, accessed from the header menu of the tool, gives the latest level of data used for each hazard and country.
