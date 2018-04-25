@@ -8,6 +8,16 @@
 
   border: 0;
 
+  &.-grey {
+    color: $font-color-3;
+
+    background-color: $site-color-6;
+
+    &:hover {
+      background-color: darken($site-color-6, 10);
+    }
+  }
+  
   &.-white {
     color: $font-color-3;
 
