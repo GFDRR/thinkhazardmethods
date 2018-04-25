@@ -19,7 +19,7 @@ ThinkHazard! is an analytical tool dedicated to improving knowledge and understa
 To achieve its objectives, the online user interface has a simple structure and workflow, comprising, 1) a location search function, 2) an overview of hazard level for 11 hazards for a selected location, and 3) a hazard-specific screen that presents risk management guidance, relevant contact information and further information in the form of useful websites and reports for that hazard and location. 
 
 <div class="c-box-image">
-  <img src="images/posts/hazarddata/thscreens.png" alt="The three page levels of thinkhazard.org. From left: homepage location search, location overview of all hazards, single hazard level and risk reduction recommendations"/>
+  <img src="images/posts/introduction/thscreens.png" alt="The three page levels of thinkhazard.org. From left: homepage location search, location overview of all hazards, single hazard level and risk reduction recommendations"/>
 </div>
 
 
