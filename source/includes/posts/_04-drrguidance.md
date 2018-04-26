@@ -27,7 +27,7 @@ Hazard level information, map, risk recommendations, further resources and conta
 User feedback is a vital component of ongoing improvements and updates to ThinkHazard!. Users can provide feedback on any topic concerning the tool, via a link to a feedback form, available in the header of the user interface. Feedback is provided via a short series of questions in a Google Form. The administrator notified, and will action any required changes and log requests for new features, responding to the feedback provider as appropriate. Users can propose additions or amendments to resources or hazard data, and can highlight where hazard levels do not match expectations. If the feedback concerns new data for use in the tool, the administrator will follow up to review the data suitability for ThinkHazard!.
  
 <div class="c-box-image">
-  <img src="images/posts/guidance/feedbackform.png" alt="Google form used to obtain user feedback"/>
+  <img src="images/posts/guidance/feedback.png" alt="Google form used to obtain user feedback"/>
 </div>
 
 
