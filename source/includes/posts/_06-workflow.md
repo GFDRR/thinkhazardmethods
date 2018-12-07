@@ -35,7 +35,7 @@ The technical workflow (contained in the ThinkHazard! processing code) identifie
             <li>If the data set is a pre-processed layer:
             <ul><li>The maximum hazard intensity value in the masked area of the data set is selected.
                 <li>This value is compared against the hazard intensity thresholds.
-                <li>The corresponding hazard level is stored for the ADM2 unit, in the processing database.</ol>
+                <li>The corresponding hazard level is stored for the ADM2 unit, in the processing database.</ul>
             <li>If the data set is not pre-processed (i.e. is probabilistic), the following process is performed with the thresholds corresponding to each hazard level (in the order of High, Medium, and Low):
             <ul><li>The maximum hazard intensity value in the masked area of the data set is selected.
                 <li>This value is compared against the hazard intensity threshold for the High hazard level, on the return period data layer corresponding to the High Hazard frequency threshold.
@@ -47,9 +47,9 @@ The technical workflow (contained in the ThinkHazard! processing code) identifie
                 <ul><li>Outputs of the above process are prioritized according to:
                     <ul><li>Data quality
                         <li>Geographic status (local or global)
-                        <li>Date of last update</ol>
+                        <li>Date of last update</ul>
                     <li>The dataset with highest priority is identified, and the hazard level for each hazard and ADM2 unit are passed through to the public database and take the first one for each ADM2 entity
                     <li>Aggregation of ADM2 hazard level to ADM1 and ADM0 is performed:
                     <ul><li>Aggregation to ADM1 is conducted by identifying the maximum hazard levels in all its ADM2 'child' units
                         <li>Aggregation to ADM0 is conducted by identifying the maximum hazard levels in all its ADM1 'child' units 
-                        <li>For each ADM Unit (2, 1, 0) and hazard, hazard level is stored in the database</ol></ol></ol>
+                        <li>For each ADM Unit (2, 1, 0) and hazard, hazard level is stored in the database</ul></ul></ol></ol>
