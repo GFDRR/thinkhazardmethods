@@ -23,10 +23,10 @@ Updates can only be made by administrators, using prescribed commands.
 Hazard levels are not classified ‘on-the-fly’ (i.e., as a user requests them) because the processing time required would slow down the user search. Instead, classified hazard level is stored for each hazard against each ADM2, ADM1, and ADM0 Unit in the database. The user interface pulls data from that database upon a user requesting data in the user interface. This enables very fast operation of the user interface, but does require administrators to update the tool database when new data are available.
 The technical workflow (contained in the ThinkHazard! processing code) identifies all hazard layers on GeoNode that are identified in metadata as being for use in ThinkHazard!. These layers are downloaded to the processing database, before being assessed for ‘completeness’. Completeness includes: 1) a valid hazard set must contain a data layer for each return period frequency threshold that is used in the classification; 2) data layers in a hazard set must all have matching spatial extent, origin, and resolution. The following hazard classification is then conducted:
 
-<ol type="1">
+<ol type="I">
     <li>All complete and previously unprocessed hazard sets are identified. These are datasets that have changed since the last execution of this process. Datasets that have already been processed are already in the production database, and are not reanalyzed.
     <li>For each hazard set:
-    <ol type="a"><li>All ADM2 units that intersect the data set bounding box are selected.
+    <ol type="A"><li>All ADM2 units that intersect the data set bounding box are selected.
         <li>The hazard classification is conducted one ADM2 unit at a time. Calculations are made on individual ADM2 units to avoid memory problems.
         <li>For each selected ADM2 unit:
         <ol type="i"><li>An extent corresponding to the current ADM2 (vector polygon) is read from the raster hazard dataset matching the return period used for the currently analyzed hazard level. 
