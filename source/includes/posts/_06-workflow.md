@@ -44,7 +44,7 @@ The technical workflow (contained in the ThinkHazard! processing code) identifie
                 <li>If the Medium hazard threshold is not exceeded, the process is performed on the Low hazard threshold and data. If Low hazard threshold is exceeded, Low hazard level is stored for the ADM2 unit.
                 <li>If none of the three hazard levels are exceeded and there are intensity values, the value ‘Very Low’ is stored.</ol>
             <li> A decision is made on which dataset to present in ThinkHazard! (i.e. which values to store in the public database), if there has been more than one dataset available to classify hazard levels. 
-                <ul><li>Outputs of the above process are prioritized according to:
+                <ol type="a"><li>Outputs of the above process are prioritized according to:
                     <ul><li>Data quality
                         <li>Geographic status (local or global)
                         <li>Date of last update</ul>
@@ -52,4 +52,4 @@ The technical workflow (contained in the ThinkHazard! processing code) identifie
                     <li>Aggregation of ADM2 hazard level to ADM1 and ADM0 is performed:
                     <ul><li>Aggregation to ADM1 is conducted by identifying the maximum hazard levels in all its ADM2 'child' units
                         <li>Aggregation to ADM0 is conducted by identifying the maximum hazard levels in all its ADM1 'child' units 
-                        <li>For each ADM Unit (2, 1, 0) and hazard, hazard level is stored in the database</ul></ul></ol></ol>
+                        <li>For each ADM Unit (2, 1, 0) and hazard, hazard level is stored in the database</ul></ol></ol></ol>
