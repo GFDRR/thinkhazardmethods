@@ -26,7 +26,7 @@ The technical workflow (contained in the ThinkHazard! processing code) identifie
 <ol type="I">
     <li>All complete and previously unprocessed hazard sets are identified. These are datasets that have changed since the last execution of this process. Datasets that have already been processed are already in the production database, and are not reanalyzed.
     <li>For each hazard set:
-    <ol type="A"><li>All ADM2 units that intersect the data set bounding box are selected.
+    <ol type="a"><li>All ADM2 units that intersect the data set bounding box are selected.
         <li>The hazard classification is conducted one ADM2 unit at a time. Calculations are made on individual ADM2 units to avoid memory problems.
         <li>For each selected ADM2 unit:
         <ol type="1"><li>An extent corresponding to the current ADM2 (vector polygon) is read from the raster hazard dataset matching the return period used for the currently analyzed hazard level. 
