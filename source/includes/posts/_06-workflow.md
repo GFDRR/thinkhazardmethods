@@ -33,23 +33,23 @@ The technical workflow (contained in the ThinkHazard! processing code) identifie
             <li>If there are hazard intensity values in the selected extent, the ADM2 unit vector is converted to a raster with resolution to match the hazard raster. If there are no values, a value of ‘No Data’ is stored in the processing database for this ADM2 unit.
             <li>This raster includes all pixels that intersect fully or partially, the ADM2 unit polygon (so that hazard pixels along the ADM2 unit boundary are accounted for). This raster is applied as a mask on the hazard dataset raster.
             <li>If the data set is a pre-processed layer:
-            <ol type="a"><li>The maximum hazard intensity value in the masked area of the data set is selected.
+            <ul><li>The maximum hazard intensity value in the masked area of the data set is selected.
                 <li>This value is compared against the hazard intensity thresholds.
                 <li>The corresponding hazard level is stored for the ADM2 unit, in the processing database.</ol>
             <li>If the data set is not pre-processed (i.e. is probabilistic), the following process is performed with the thresholds corresponding to each hazard level (in the order of High, Medium, and Low):
-            <ol type="a"><li>The maximum hazard intensity value in the masked area of the data set is selected.
+            <ul><li>The maximum hazard intensity value in the masked area of the data set is selected.
                 <li>This value is compared against the hazard intensity threshold for the High hazard level, on the return period data layer corresponding to the High Hazard frequency threshold.
                 <li>If the intensity threshold is exceeded, High hazard level is stored for the ADM2 unit, in the processing database. 
                 <li>If the High hazard threshold is not exceeded, the process is performed on the Medium hazard threshold and data. If Medium hazard threshold is exceeded, Medium hazard level is stored for the ADM2 unit.
                 <li>If the Medium hazard threshold is not exceeded, the process is performed on the Low hazard threshold and data. If Low hazard threshold is exceeded, Low hazard level is stored for the ADM2 unit.
                 <li>If none of the three hazard levels are exceeded and there are intensity values, the value ‘Very Low’ is stored.</ol>
             <li> A decision is made on which dataset to present in ThinkHazard! (i.e. which values to store in the public database), if there has been more than one dataset available to classify hazard levels. 
-                <ol type="a"><li>Outputs of the above process are prioritized according to:
-                    <ol type="i"><li>Data quality
+                <ul><li>Outputs of the above process are prioritized according to:
+                    <ul><li>Data quality
                         <li>Geographic status (local or global)
                         <li>Date of last update</ol>
                     <li>The dataset with highest priority is identified, and the hazard level for each hazard and ADM2 unit are passed through to the public database and take the first one for each ADM2 entity
                     <li>Aggregation of ADM2 hazard level to ADM1 and ADM0 is performed:
-                    <ol type="i"><li>Aggregation to ADM1 is conducted by identifying the maximum hazard levels in all its ADM2 'child' units
+                    <ul><li>Aggregation to ADM1 is conducted by identifying the maximum hazard levels in all its ADM2 'child' units
                         <li>Aggregation to ADM0 is conducted by identifying the maximum hazard levels in all its ADM1 'child' units 
                         <li>For each ADM Unit (2, 1, 0) and hazard, hazard level is stored in the database</ol></ol></ol>
