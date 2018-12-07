@@ -29,15 +29,15 @@ The technical workflow (contained in the ThinkHazard! processing code) identifie
     <ol type="A"><li>All ADM2 units that intersect the data set bounding box are selected.
         <li>The hazard classification is conducted one ADM2 unit at a time. Calculations are made on individual ADM2 units to avoid memory problems.
         <li>For each selected ADM2 unit:
-        <ol type="i"><li>An extent corresponding to the current ADM2 (vector polygon) is read from the raster hazard dataset matching the return period used for the currently analyzed hazard level. 
+        <ol type="1"><li>An extent corresponding to the current ADM2 (vector polygon) is read from the raster hazard dataset matching the return period used for the currently analyzed hazard level. 
             <li>If there are hazard intensity values in the selected extent, the ADM2 unit vector is converted to a raster with resolution to match the hazard raster. If there are no values, a value of ‘No Data’ is stored in the processing database for this ADM2 unit.
             <li>This raster includes all pixels that intersect fully or partially, the ADM2 unit polygon (so that hazard pixels along the ADM2 unit boundary are accounted for). This raster is applied as a mask on the hazard dataset raster.
             <li>If the data set is a pre-processed layer:
-            <ol type="1"><li>The maximum hazard intensity value in the masked area of the data set is selected.
+            <ol type="a"><li>The maximum hazard intensity value in the masked area of the data set is selected.
                 <li>This value is compared against the hazard intensity thresholds.
                 <li>The corresponding hazard level is stored for the ADM2 unit, in the processing database.</ol>
             <li>If the data set is not pre-processed (i.e. is probabilistic), the following process is performed with the thresholds corresponding to each hazard level (in the order of High, Medium, and Low):
-            <ol type="1"><li>The maximum hazard intensity value in the masked area of the data set is selected.
+            <ol type="a"><li>The maximum hazard intensity value in the masked area of the data set is selected.
                 <li>This value is compared against the hazard intensity threshold for the High hazard level, on the return period data layer corresponding to the High Hazard frequency threshold.
                 <li>If the intensity threshold is exceeded, High hazard level is stored for the ADM2 unit, in the processing database. 
                 <li>If the High hazard threshold is not exceeded, the process is performed on the Medium hazard threshold and data. If Medium hazard threshold is exceeded, Medium hazard level is stored for the ADM2 unit.
