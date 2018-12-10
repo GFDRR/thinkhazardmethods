@@ -267,37 +267,43 @@ The classification of global data results in the following distribution of hazar
 </div>
 
 ## Volcanic Hazard Levels
-Classification Summary:
-Hazard levels are defined outside of ThinkHazard!, using a combination of historical eruption records: maximum recorded eruption size (Volcanic explosivity index) and last known eruption date).
+<div class="c-box"><span class="box-title"><b>Classification Summary:</b></span>
+  <p>Hazard levels are defined outside of ThinkHazard!, using a combination of historical eruption records: maximum recorded eruption size (Volcanic explosivity index) and last known eruption date).</p>
+</div>
+
 A volcano is a place where magma comes to the surface, during volcanic activity. Volcanoes present potential threats to people and property, due to:
-	Proximal hazards, affecting the area within 100 km around a volcano 
-	Lava flows are very hot materials that can destroy the built environment and can release harmful gases.
-	Pyroclastic flows are a mixture of extremely hot rocks, sediment and gases that moves downhill, destroying most things it encounters and depositing large quantities of debris.
-	Lahars are flows of water, rock and sediment that destroy most things they contact, and deposit large quantities of debris. They can occur without an eruption during wet weather when rainfall mobilizes loose volcanic material.
-	Distal hazards, affecting larger distances 
-	Ash (or tephra) consists of small fragments projected in the air during eruption, which drop over large area. They cause health problems, disrupt services and agriculture, and the weight of ash (especially when wet) can cause roofs to collapse.
-	Gases released into the atmosphere.
+<ul><li>Proximal hazards, affecting the area within 100 km around a volcano 
+	<ul><li>Lava flows are very hot materials that can destroy the built environment and can release harmful gases.
+	<li>Pyroclastic flows are a mixture of extremely hot rocks, sediment and gases that moves downhill, destroying most things it encounters and depositing large quantities of debris.
+	<li>Lahars are flows of water, rock and sediment that destroy most things they contact, and deposit large quantities of debris. They can occur without an eruption during wet weather when rainfall mobilizes loose volcanic material.</ul>
+	<ul><li>Distal hazards, affecting larger distances 
+	<li>Ash (or tephra) consists of small fragments projected in the air during eruption, which drop over large area. They cause health problems, disrupt services and agriculture, and the weight of ash (especially when wet) can cause roofs to collapse.
+    <li>Gases released into the atmosphere.</ul>
+
 Eruptions can be relatively rare events, and volcanoes can remain quiet for several hundreds of years between eruptions. For most volcanoes globally, there is little information to assess how frequently eruptions might occur, and how big they might be in an eruption. For some well-studied volcanoes this information is available through assessment of previous deposits. Ashfall modelling is gradually providing more data that shows potential depth of ash at multiple return periods, though a lack of eruption data introduces significant uncertainties to the outputs. 
 Volcanic hazard levels are defined outside of ThinkHazard!, using a combination of historical eruption records: maximum recorded eruption size (Volcanic explosivity index) and last known eruption date).  Several global eruption databases record the coordinate location, dates, type and magnitude of past eruptions.  The Smithsonian Global Volcanic Program (GVP)  and LaMEVE  databases contain a volcanic eruption index (VEI)  which quantifies the eruptive magnitude of past events. These are the best global information from which we can classify volcanic hazard, however, they contain significant uncertainty. Volcanoes with no recorded eruption, or that has never erupted in living memory may pose a hazard. The most widely used measure of volcanic intensity is VEI. Volcanoes can display variable VEI in different eruptions, and VEI varies over time during the same eruption. The maximum eruption VEI per eruption are provided in the GVP and LaMEVE eruption databases. The maximum VEI at each volcano forms the basis of the intensity thresholds used in preprocessing. Not all volcanoes in these databases have an associated VEI value. Where this is the case, date of last eruption is used (section 7.2.3.1). Where VEI is available, VEI 3 is used as a threshold to define a non-explosive volcano (those with a VEI < 3), are rated as ‘Low’ hazard. Volcanoes with maximum VEI > 5 are rated High, and those with a maximum recorded VEI 3-5 are ‘Medium’. 
 The above is done in combination with consideration of the eruptive history (dates of previous eruptions). The most available, but basic, measure of eruption frequency is date of last eruption. Many volcanoes do not have a complete history of all eruptions because the average time between eruptions is can be several hundred or thousand years (these tend to be the volcanoes with more powerful eruptions) so it is difficult to reliably and consistently compare frequency across all volcanoes in the GVP database. Conversely, some volcanoes erupt with surprising regularity – monthly or even daily – with much smaller eruption and little impact. Last eruption date is only a very approximate guide to frequency of eruption, and further work should be done in future to better define volcanic hazard level for ThinkHazard!. 
 Considering the above, last known eruption data is used as a guide to eruption potential only if there is no VEI data for a volcano. If the last known eruption was over 10000 years ago, it is considered Low hazard; if the last eruption occurred within the last 2000 years ago, it assigned High hazard. Anything with a last know eruption in the intervening period is Medium.
 The procedure is applied as follows:
-	For each volcano of the GVM database, location, date of last known eruption and the maximum VEI index is extracted from the database
-	Hazard level is associated to the VEI index value (when available):
-	If VEI≥5, then hazard level is high,
-	If 5>VEI≥3, then hazard level is medium,
-	If VEI<3, then hazard level is low,
-	If the VEI index value is not available, hazard level is associated according to the date of last known eruption:
-	If it was recorded an eruption in the last 2000 years (CE), then hazard level is high,
-	If it was recorded an eruption in the Holocene (last 10000 years), then hazard level is medium,
-	If it was recorded an eruption in more ancient times, then hazard level is low,
-	If no eruption of the volcano has been reported, then hazard level is low,
- To account for the fact that damage from a volcano does not occur only at the vent, but several tens of kilometers around the vent, the hazard level of each volcano is applied to a circular area around the volcano coordinate location.
+<ul><li>For each volcano of the GVM database, location, date of last known eruption and the maximum VEI index is extracted from the database
+<li>Hazard level is associated to the VEI index value (when available):
+    <ul><li>If VEI≥5, then hazard level is high
+	    <li>If 5>VEI≥3, then hazard level is medium
+        <li>If VEI<3, then hazard level is low</ul>
+<li>If the VEI index value is not available, hazard level is associated according to the date of last known eruption:
+    <ul><li>If it was recorded an eruption in the last 2000 years (CE), then hazard level is high,
+    <liIf it was recorded an eruption in the Holocene (last 10000 years), then hazard level is medium
+    <li>If it was recorded an eruption in more ancient times, then hazard level is low
+    <li>If no eruption of the volcano has been reported, then hazard level is low
+        
+To account for the fact that damage from a volcano does not occur only at the vent, but several tens of kilometers around the vent, the hazard level of each volcano is applied to a circular area around the volcano coordinate location.
 The maximum extent of proximal hazards is approximately 100 kilometers from a volcanic vent. This distance does not account for topographic influences that constrain the flow of lahars and lava. The resulting raster map of hazard levels provides a crude assessment of proximal volcanic hazard (excluding impacts of ash and gas), see Figure 27. This map is uploaded to the ThinkHazard! database. The tool then associates the hazard level to administrative units following the normal procedure: intersection with administrative polygons and maximum of hazard level on a given unit.
-Results of classification
- 
-Figure 27 Hazard class at all locations within 100 km of a volcano. Red = high hazard, orange = medium, yellow = low. Very low and unknown hazard are not shown. 
-	Future probabilistic classification
+
+### Results of classification
+<div class="c-box-image"><img src="images/posts/hazardmethods/fig27.png" alt=" Hazard class at all locations within 100 km of a volcano. Red = high hazard, orange = medium, yellow = low. Very low and unknown hazard are not shown"/>
+</div>
+
+### Future probabilistic classification
 When available, probabilistically simulated ashfall data can be imported as maps of ash depth at multiple return periods, enabling hazard levels to be defined as described in section 2.4. However, such analysis are available for only a few regions, and are not typically represented at the multiple return periods required for ThinkHazard!. Work may have to be commissioned to achieve good coverage of volcanic ash hazard levels in ThinkHazard!.
 Probabilistic volcanic data are available as raster containing ash depth (mm) at each grid cell, or as maps of isopachs indicating the limits of ash depth distribution, for several return periods. Recommended ash depth thresholds for hazard levels are: 0.5 mm, 10 mm, and 50 mm. These values are selected based on differential impact. Ash thicknesses of 0.5 mm can impact transportation by reducing visibility and obscuring road markings. At 10 mm, minor damage to buildings and infrastructure may occur through ash infiltration requiring extensive clean-up and this thickness of ash may cause agricultural productivity loss (<50%) and health implications. At 50 mm, major agricultural productivity loss (>50%) and damage to buildings and infrastructure (i.e., potential roof collapse), ash infiltration to buildings and health implications would be expected (GVM, 2016). 
 There is no industry standard frequency for presenting ash fall modeling. Frequency of eruption varies significantly for different volcanoes, but generally ash impacts are relevant presented at return periods greater than 100 years. A decision on recommended return period for probabilistic ash data would have to be taken on receipt of global ash modeling data, but it is expected that suitable return periods would include 100, 500, 1000, and 10000 years.
