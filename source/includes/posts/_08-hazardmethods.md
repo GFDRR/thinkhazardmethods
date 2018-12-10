@@ -201,9 +201,9 @@ The severity of earthquake impact is commonly measured according the effects of 
 The European Macroseismic Scale  (EMS98), ranks seismic shaking according to effect on people, buildings and the environment. An event of EMS VI is considered to cause ‘slightly damaging’ effects to structures (Table 5), such as fine cracks in plaster, and can be felt by most people. Shaking with intensity VII result in stronger effects: people are frightened, cracks appear in buildings, and chimney start collapsing. According to widely acknowledged correlations  between intensity and PGA, intensity VI corresponds approximately to a 0.1 g and intensity VII to 0.2 g. Some earthquake hazard data are available only in EMS or Modified Mercalli Intensity (MMI). In such cases, data are converted to PGA value using conversaion equations before storage on GeoNode and import to ThinkHazard!.
 
 Illustration of probability of damages for vulnerable buildings according to the intensity of seismic shaking (EMS98)
-<table><tr><td>Degree of damage for vulnerable buildings</td><td></td><td></td><td></td><td></td></tr>
+<table><tr><td>Degree of damage for vulnerable buildings</td><td><img src="images/posts/hazardmethods/hq1.png"></td><td><img src="images/posts/hazardmethods/hq2.png"></td><td><img src="images/posts/hazardmethods/hq3.png"></td><td><img src="images/posts/hazardmethods/hq4.png"></td></tr>
 <tr><td>Intensity VI</td><td>Many buildings</td><td>Some buildings</td><td></td><td></td></tr>
-<tr><td>Intensity VII</td><td>Many buildings</td><td>Some buildings</td><td></td><td></td></tr></table>
+<tr><td>Intensity VII</td><td></td><td></td><td>Many buildings</td><td>Some buildings</td></tr></table>
 
 Hazard dataset provide seismic hazard different for PGA. To enable those datasets to be included in ThinkHazard!, several units are accepted in the processing algorithm, which can read PGA in terms of a decimal or percentage value of Gravity (g), or PGA in terms of SI units (e.g., gal or cm/s2) (see Table 6).
 
