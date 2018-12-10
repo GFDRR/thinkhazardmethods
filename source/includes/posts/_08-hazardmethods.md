@@ -182,5 +182,47 @@ The classification of hazard at ADM2 Units based on a global probabilistic WBGT 
   <img src="images/posts/hazardmethods/fig20.png" alt="Heat hazard classification map at the ADM2-level. The figure visualizes the location with very low (dark green), low (green), medium (orange) and high (red) extreme heat risk"/>
 </div>
 
+## Earthquake Hazard Levels
+<div class="c-box"><span class="box-title"><b>Classification Summary:</b></span>
+  <p>
+Earthquake hazard is classified using peak ground acceleration (PGA, representing ground shaking), provided as frequency-severity data in raster format. The methodology follows that described in section 2.4.
+The damaging intensity threshold is 0.2 g for high hazard and 0.1 g for medium and low hazard, using frequency thresholds of 100-250 years, 475-500 years, and 1000-2500 years for high, medium and low hazard, respectively.</p>
+</div>
+
+Earthquake hazard maps generally consist of a grid of the expected peak ground acceleration (PGA) with a 10% chance of being exceeding in a 50-year interval, which translates to a return period of 475 years. Fifty years is often considered as a standard lifespan for infrastructures. For example, the following map was recently published by the <a href="http://www.efehr.org:8080/jetspeed/portal/hazard.psml">SHARE European project</a>. The 475-year return period is a typical choice for seismic design codes for normal buildings whereas longer return periods are used as the basis of critical infrastructure such as bridges or dams (nuclear installations use even longer return periods, e.g. 10 000 years). 
+
+<div class="c-box-image">
+  <img src="images/posts/hazardmethods/fig22.png" alt="Example seismic hazard map (source: FP7-SHARE project)"/>
+</div>
+
+ThinkHazard! uses UNISDR GAR15 data to provide global coverage for earthquake hazard, but across the world relies on many regional and local datasets available in the GeoNode to provide higher resolution hazard data with fewer global assumptions. Where available, the higher resolution datasets are utilized in the hazard classification.
+
+### Intensity
+The severity of earthquake impact is commonly measured according the effects of the shaking on humans and structures. For example, the European Macroseismic Scale (EMS-98) ranks earthquakes on a 12-degree scale from “not felt” to “completely devastating”, each intensity degree denoting how strongly an earthquake affects a specific place. Intensity is subjective, determined according to post-disaster survey, from the observed effects of the earthquake. 
+The European Macroseismic Scale  (EMS98), ranks seismic shaking according to effect on people, buildings and the environment. An event of EMS VI is considered to cause ‘slightly damaging’ effects to structures (Table 5), such as fine cracks in plaster, and can be felt by most people. Shaking with intensity VII result in stronger effects: people are frightened, cracks appear in buildings, and chimney start collapsing. According to widely acknowledged correlations  between intensity and PGA, intensity VI corresponds approximately to a 0.1 g and intensity VII to 0.2 g. Some earthquake hazard data are available only in EMS or Modified Mercalli Intensity (MMI). In such cases, data are converted to PGA value using conversaion equations before storage on GeoNode and import to ThinkHazard!.
+
+Illustration of probability of damages for vulnerable buildings according to the intensity of seismic shaking (EMS98)
+Degree of damage for vulnerable buildings	 	 	 	 
+ Intensity VI	Many buildings	Some buildings		
+Intensity VII			Many buildings	Some buildings
+Hazard dataset provide seismic hazard different for PGA. To enable those datasets to be included in ThinkHazard!, several units are accepted in the processing algorithm, which can read PGA in terms of a decimal or percentage value of Gravity (g), or PGA in terms of SI units (e.g., gal or cm/s2) (see Table 6).
+
+conversion table for units of earthquake data
+<table><tr><td>Paramete unit</td><td colspan=2><table><tr><td>Thresholds</td></tr>
+    <tr><td>High</td><td>Medium and Low</td></tr>
+<tr><td>PGA-g</td><td>0.2</td><td>0.1</td></tr>
+<tr><td>PGA-g-per</td><td>20</td><td>10</td></tr>
+<tr><td>PGA-gal</td><td>196.133</td><td>98.066</td></tr>
+<tr><td>PGA-cm/s²</td><td>196.133</td><td>98.066</td></tr>
+<tr><td>PGA-m/s²</td><td>1.961</td><td>0.981</td></tr></table>
+
+### Frequency
+The earthquake field has standard frequencies for presenting earthquake hazard, for which maps are available from many projects. The standard used by research and engineers is to present 475, 975 and 2475 years. More commonly the 100, 250, 500, 1000, and 2500 years are used by the insurance industry. ThinkHazard! leverages these standards in setting the return periods to maximize the data that can be incorporated. Preferred values for return periods are:
+<ul><li>High: 1 in 100 years (10% chance the value is exceeded in 10 years, 50% in 50 years).
+<li>Medium: 1 in 475 years (2% in 10 years, 10% in 50 years). 
+<li>Low: 1 in 2475 years (0.4% in 10years, 2% in 50 years).
+ 
+If 2475-year return period data are not available, 975-year is an acceptable value (5% chance of exceedance in 50 years) for the longest return period, since it still corresponds to a low probability of exceedance on the lifespan of common projects. 
+If 100-year return period data are not available, 250 years is an acceptable value (4% chance of exceedance in 10 years or 20% in 50 years) for the shortest return period, since it still corresponds to a high probability of exceedance on common projects lifespan. For medium return period, data can also be fund for 500-year return period. The 250 and 500-year return periods are often available in datasets produced for the financial sector.
 
 
