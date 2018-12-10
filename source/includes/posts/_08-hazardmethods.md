@@ -191,8 +191,7 @@ The damaging intensity threshold is 0.2 g for high hazard and 0.1 g for medium a
 
 Earthquake hazard maps generally consist of a grid of the expected peak ground acceleration (PGA) with a 10% chance of being exceeding in a 50-year interval, which translates to a return period of 475 years. Fifty years is often considered as a standard lifespan for infrastructures. For example, the following map was recently published by the <a href="http://www.efehr.org:8080/jetspeed/portal/hazard.psml">SHARE European project</a>. The 475-year return period is a typical choice for seismic design codes for normal buildings whereas longer return periods are used as the basis of critical infrastructure such as bridges or dams (nuclear installations use even longer return periods, e.g. 10 000 years). 
 
-<div class="c-box-image">
-  <img src="images/posts/hazardmethods/fig22.png" alt="Example seismic hazard map (source: FP7-SHARE project)"/>
+<div class="c-box-image"><img src="images/posts/hazardmethods/fig22.png" alt="Example seismic hazard map (source: FP7-SHARE project)"/>
 </div>
 
 ThinkHazard! uses UNISDR GAR15 data to provide global coverage for earthquake hazard, but across the world relies on many regional and local datasets available in the GeoNode to provide higher resolution hazard data with fewer global assumptions. Where available, the higher resolution datasets are utilized in the hazard classification.
@@ -207,7 +206,7 @@ Degree of damage for vulnerable buildings
 Intensity VII			Many buildings	Some buildings
 Hazard dataset provide seismic hazard different for PGA. To enable those datasets to be included in ThinkHazard!, several units are accepted in the processing algorithm, which can read PGA in terms of a decimal or percentage value of Gravity (g), or PGA in terms of SI units (e.g., gal or cm/s2) (see Table 6).
 
-conversion table for units of earthquake data
+Conversion table for units of earthquake data
 <table><tr><td>Paramete unit</td><td colspan=2><table><tr><td colspan=2>Thresholds</td></tr>
     <tr><td>High</td><td>Medium and Low</td></tr></table></td></tr>
 <tr><td>PGA-g</td><td>0.2</td><td>0.1</td></tr>
@@ -218,11 +217,54 @@ conversion table for units of earthquake data
 
 ### Frequency
 The earthquake field has standard frequencies for presenting earthquake hazard, for which maps are available from many projects. The standard used by research and engineers is to present 475, 975 and 2475 years. More commonly the 100, 250, 500, 1000, and 2500 years are used by the insurance industry. ThinkHazard! leverages these standards in setting the return periods to maximize the data that can be incorporated. Preferred values for return periods are:
-<ul><li>High: 1 in 100 years (10% chance the value is exceeded in 10 years, 50% in 50 years).
-<li>Medium: 1 in 475 years (2% in 10 years, 10% in 50 years). 
-<li>Low: 1 in 2475 years (0.4% in 10years, 2% in 50 years).
+<ul><li>High: 1 in 100 years (10% chance the value is exceeded in 10 years, 50% in 50 years)
+<li>Medium: 1 in 475 years (2% in 10 years, 10% in 50 years)
+<li>Low: 1 in 2475 years (0.4% in 10years, 2% in 50 years)</ul>
  
 If 2475-year return period data are not available, 975-year is an acceptable value (5% chance of exceedance in 50 years) for the longest return period, since it still corresponds to a low probability of exceedance on the lifespan of common projects. 
 If 100-year return period data are not available, 250 years is an acceptable value (4% chance of exceedance in 10 years or 20% in 50 years) for the shortest return period, since it still corresponds to a high probability of exceedance on common projects lifespan. For medium return period, data can also be fund for 500-year return period. The 250 and 500-year return periods are often available in datasets produced for the financial sector.
+
+## Tsunami Hazard Levels
+<div class="c-box"><span class="box-title"><b>Classification Summary:</b></span>
+  <p>Tsunami hazard data at the scales appropriate for use in ThinkHazard! is generally presented as maximum wave amplitude or height, usually at 100 m water depth, provided as frequency-severity data in raster format. The methodology follows that described in section 2.4. The damaging intensity threshold is 2 m for high hazard, 1 m for medium hazard, and 0.5 m for low hazard, using frequency thresholds of 100 years, 500 years, and 2500 years for high, medium and low hazard, respectively.</p>
+</div>
+
+It is decided that a threshold of 0.5 m should be used for low hazard, as it represents a height at which land and buildings are flooded, and which allows for some uncertainty in offshore values of tsunami translated to potential onshore impacts. A value of 1.0 m for medium hazard is proposed to distinguish areas of known hazard e.g., Eastern Mediterranean Sea from areas of lower hazard (e.g., Western Africa). High hazard is classified using a higher threshold of 2.0 m, which corresponds to the depth at which building damage ratio increases significantly, based on post-disaster surveys in Japan, 2011 (MLIT, 2012). 
+GFDRR commissioned analysis by the Norwegian Geotechnical Institute, Geoscience Australia, and INGV Italy (under the umbrella of the Global Tsunami Model) to make data developed by Davies et al. (2017) openly available at several return periods. The dataset provides run-up values calculated at offshore hazard points, which have been projected to the shoreline by simple interpolation (described in the NGI report, in ThinkHazard! Methodology Google Drive folder). These coastal values have been rasterized at 0.01-degree resolution (c. 1km at the equator) for import to GeoNode and Thinkhazard!.
+
+<div class="c-box-image"><img src="images/posts/hazardmethods/fig23.png" alt="Tsunami maximum inundation height data at offshore points (output of Davies et al., 2017), for Sulawesi, Indonesia"/>
+</div>
+<div class="c-box-image"><img src="images/posts/hazardmethods/fig24.png" alt="Tsunami maximum inundation height data at the coast, interpolated from the points offshore Sulawesi, Indonesia"/>
+</div>
+
+An alternative pre-processing approach can be used to better define potential areas of onshore inundation, which identify low-lying areas where tsunami may inundate far inland. This can lead to non-coastal ADM2 units being assigned a hazard level, which would otherwise not be identified in the global data. This approach relies on SRTM elevation data, which are not available for the entire domain of global tsunami data, therefore use of this approach is limited to national or regional data. 
+Due to the associated computational requirements and aggregated hazard levels presented by ThinkHazard!, it is not appropriate to conduct full inundation modelling to define onshore inundation height and extent. It is instead proposed to apply a simple ‘bathtub’ method which compares wave height from each point, to ground elevation within 10 km of the coastline.  This distance is expected to incorporate the maximum inundation of any tsunami. This processing procedure is as follows:
+<ol style="a">
+    <li>Extract the pixels covering the coast zone (to 10km inland) from SRTM30 tiles covering the tsunami data extent.
+    <li>Produce a buffer polygon around each tsunami data point, to a distance sufficient to intersect the first 10 km inland from the coastline. Assign the point data value to the corresponding polygon.
+    <li>Rasterize the polygon layer, aligned with SRTM raster cells, with maximum value of the buffered polygons assigned to the raster value. 
+    <li>Perform a raster calculation; Inundation depth is calculated as tsunami height minus SRTM elevation. Where inundation depth is negative, it should be set to zero (the ground is not inundated).
+    <li>This process is repeated for each return period layer to produce one ‘bathtub’ inundation map per return period for import to ThinkHazard!</ol>
+        
+An alternative approach to this, is to use an attenuation-based approach, which applies a degree of attenuation to the tsunami data points, to better represent the potential height inland. The attenuation relationship used is derived from post-tsunami surveys of inundation height decreasing with distance inland (Leonard et al. 2008). Another alternative is to use tsunami run-up equations to estimate tsunami run-up inland. Both approaches would be best suited to local data, and retain a significant amount of uncertainty in the onshore heights produced. These approaches and their impact on hazard level may be explored in future.
+Next table example of pre-processed rasters for tsunami in Indonesia. Red zones show regions were wave height exceeds both elevation and the threshold on the buffered coastline
+<table><tr><td>RP100 years, Red: h>2m</td><td>RP500 years, Red: h>0.5m</td><td>RP2500 years, Red: h>0.5m</td></tr>
+<tr><td><img src="images/posts/hazardmethods/t100.png"></td><td><img src="images/posts/hazardmethods/t500.png"></td><td><img src="images/posts/hazardmethods/t2500.png"></td></tr></table>
+		
+### Intensity
+Tsunami hazard is the potential for damage by massive volumes of water flowing onshore, with high velocity and depth, as tsunami waves. Damage occurs due to the force of waves, debris contained in the waves, floatation and scour of structures, and deposition of sediment/rocks. Tsunami waves are generated primarily by submarine earthquakes displacing the water column above, but also landslides or volcanic eruptions, which can displace large volumes of water if they occur underwater or at the coast. Small tsunamis can have very localized effects. The largest tsunamis, generated along subduction zones, can travel across the whole ocean affecting coastlines of multiple countries and inundating long distances and up to several kilometers inland, depending on topography.
+Tsunami hazard data is commonly probabilistic and provides a view of hazard (generally wave height, rather than velocity) for multiple return periods. Data may be available as onshore inundation maps (typical of local analyses, e.g., for a city or province) or, more commonly for large areas such as national or global analysis, point data at locations offshore. Due to the computational overheads of simulating the nearshore and onshore flow of tsunami, data points are often spaced several kilometers (or tens of km) apart and are located offshore, e.g., at the 100m isobath (water depth). On the other hand, availability of inundation maps is likely to be limited, since models have very high technical and computational requirements.
+
+### Frequency
+Tsunami hazard data do not have de facto standard frequencies. However, given tsunamis’ primarily tectonic causes, the timescales used are commonly in the range of 100 to 2500-year return periods are used. Analysis commissioned for ThinkHazard! has enabled global tsunami data at 10, 50, 100, 200, 500, 1000, and 2500-year return periods to be openly available. Return periods of 100, 500, and 2500-year are used to define high, medium and low hazard, respectively.
+
+### Results of classification
+The classification of global data results in the following distribution of hazard levels:
+
+<div class="c-box-image"><img src="images/posts/hazardmethods/fig25.png" alt="Global tsunami hazard levels at ADM1"/>
+</div>
+<div class="c-box-image"><img src="images/posts/hazardmethods/fig26.png" alt="Global tsunami hazard levels at ADM2"/>
+</div>
+
 
 
