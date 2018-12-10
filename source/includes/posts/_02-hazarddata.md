@@ -88,16 +88,16 @@ Hazard data for the same hazard may be provided with different intensity units. 
 
 A summary of damaging intensity parameters, units and thresholds used in the classification of probabilistic data (only one common unit shown for hazard):
 
-<table><tr><td><b>Hazard</td><td><b>Intensity parameter</td><td><b>Intensity Unit</td><td><table><tr><td><b>Intensity threshold value</td></tr><tr><td><b>High</td><td><b>Medium</td><td><b>Low</b></td></tr></table></td></tr>
-<tr><td><b>Earthquake</td><td><b>Acceleration (PGA)</td><td><b>g</td><td><b>0.2</td><td><b>0.1</td><td><b>0.1</td></tr>
-<tr><td><b>Extreme heat</td><td><b>Wet Bulb Globe Temperature (WBGT)</td><td><b>°C</td><td><b>32</td><td><b>28</td><td><b>25</td></tr>
-<tr><td><b>River flood*</td><td><b>Inundation depth</td><td><b>m</td><td><b>0.5</td><td><b>0.5</td><td><b>0.5</td></tr>
-<tr><td><b>Urban flood*</td><td><b>Inundation depth</td><td><b>m</td><td><b>0.5</td><td><b>0.5</td><td><b>0.5</td></tr>
-<tr><td><b>Coastal flood</td><td><b>Inundation depth</td><td><b>m</td><td><b>2</td><td><b>0.5</td><td><b>0.5</td></tr>
-<tr><td><b>Cyclone</td><td><b>Mean wind speed</td><td><b>km/h</td><td><b>80</td><td><b>80</td><td><b>80</td></tr>
-<tr><td><b>Tsunami</td><td><b>Coastal maximum amplitude</td><td><b>m</td><td><b>2</td><td><b>1</td><td><b>0.5</td></tr>
-<tr><td><b>Water scarcity</td><td><b>Water availability</td><td><b>m3/capita/yr</td><td><b><=500</td><td><b><=1000</td><td><b><=1700</td></tr>
-<tr><td><b>Wildfir</td><td><b>Canadian Fire Weather Index</td><td><b>FWI</td><td><b>30</td><td><b>20</td><td><b>15</td></tr></table>
+<table><tr><td><b>Hazard</td><td><b>Intensity parameter</td><td><b>Intensity Unit</td><td><table><tr><td colspan=3><b>Intensity threshold value</td></tr><tr><td><b>High</td><td><b>Medium</td><td><b>Low</b></td></tr></table></td></tr>
+<tr><td>Earthquake</td><td>Acceleration (PGA)</td><td>g</td><td>0.2</td><td>0.1</td><td>0.1</td></tr>
+<tr><td>Extreme heat</td><td>Wet Bulb Globe Temperature (WBGT)</td><td>°C</td><td>32</td><td>28</td><td>25</td></tr>
+<tr><td>River flood*</td><td>Inundation depth</td><td>m</td><td>0.5</td><td>0.5</td><td>0.5</td></tr>
+<tr><td>Urban flood*</td><td>Inundation depth</td><td>m</td><td>0.5</td><td>0.5</td><td>0.5</td></tr>
+<tr><td>Coastal flood</td><td>Inundation depth</td><td>m</td><td>2</td><td>0.5</td><td>0.5</td></tr>
+<tr><td>Cyclone</td><td>Mean wind speed</td><td>km/h</td><td>80</td><td>80</td><td>80</td></tr>
+<tr><td>Tsunami</td><td>Coastal maximum amplitude</td><td>m</td><td>2</td><td>1</td><td>0.5</td></tr>
+<tr><td>Water scarcity</td><td>Water availability</td><td>m3/capita/yr</td><td><=500</td><td><=1000</td><td><=1700</td></tr>
+<tr><td>Wildfire</td><td>Canadian Fire Weather Index</td><td>FWI</td><td>30</td><td>20</td><td>15</td></tr></table>
 
 * Although river flood and urban flood data are provided as probabilistic data, it was found in ThinkHazard! version 1 that use of a damaging intensity alone overestimates high hazard (it is common for flood data to have a very small number of cells attributed to high hazard, which overestimate the hazard for the whole ADM2 Unit). Therefore, it was decided to use an additional spatial assessment in a pre-processing stage, to classify hazard based on a minimum area exceeding the damaging threshold. Further information is given in section 8.1.
 
