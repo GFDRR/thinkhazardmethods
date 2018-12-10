@@ -29,7 +29,7 @@ The following frequency classes are used in ThinkHazard! version 2:
 <li>medium: 50-year return period
 <li>low: 1000-year return period
     
- <br>
+ <br><br>
  <center><b>Table 3</b> Example of rationale justifying the choice of return periods, for river flood hazard</center>
     
 <table><tr><td><b>Name</td><td><b>Return period</td><td><b>Rationale</td></tr>
@@ -48,6 +48,9 @@ The maps below indicate the ADM2 classification based on SSBN Ltd 90 m global fl
 
 
 <b>Figure 13</b> Final classification for river flood at ADM2 level: blue = very low; yellow = low; orange = medium; red = high
+
+<b>Figure 14</b> Final classification for urban flood at ADM2 level: blue = very low; yellow = low; orange = medium; red = high
+
 
 ## Coastal Flood Hazard Levels
 
@@ -94,4 +97,12 @@ The following frequency classes are used in ThinkHazard! version 2 (unchanged fr
 <li>low: 1000-year return period
     <br><br>
 
+<table>
+    <tr><td><b>Name of category</td><td><b>Best Case RP</td><td><b>Average RP</td><td><b>Best Case chance</td><td><b>Average chance</td><td><b>Ragionale</td></tr>
+<tr><td>High</td><td>5 years</td><td>2 years</td><td>20%</td><td>50%</td><td>This category represents areas where water scarcity is common but do not occur every year. Many countries in this category experience water stress every other year.</td></tr>
+<tr><td>Medium</td><td>50 years</td><td>25 years</td><td>2%</td><td>4%</td><td>The 50 years return period was selected to represent water scarcity that occur once or twice in a lifetime. It corresponds to a large increase in number of water provinces which fall in this category.</td></tr>
+<tr><td>Low</td><td>1000</td><td>years</td><td>250 years</td><td>0.1%</td><td>0.4%</td><td>Water provinces and countries in this category experience droughts less than once in a human life time, but they may occur occasionally.</td></tr>
+<tr><td>Very low</td><td>>1000 years</td><td>1*10^(24) years</td><td>0%</td><td>0%</td><td>In this category no water stress is expected based on longest return period under the current climate, current models and data. However, some uncertainty remains.</td></tr></table>
+
+For each water province and available return period it was then calculated whether Falkenmark’s threshold of 1700 m3 per capita per year was met. In other words, for each water province and return period it was determined if water stress would occur. Figure 15 shows the number of countries with a WCI below 1700 m3 of renewable water resources per capita per year for several return periods. This graph is used as basis for the categorization. 
 
