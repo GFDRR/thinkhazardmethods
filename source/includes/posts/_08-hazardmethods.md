@@ -49,12 +49,10 @@ The maps below indicate the ADM2 classification based on SSBN Ltd 90 m global fl
 <div class="c-box-image">
   <img src="images/posts/hazardmethods/fig13.png" alt="Final classification for river flood at ADM2 level: blue = very low; yellow = low; orange = medium; red = high"/>
 </div>
-<b>Figure 13</b> Final classification for river flood at ADM2 level: blue = very low; yellow = low; orange = medium; red = high
 
 <div class="c-box-image">
   <img src="images/posts/hazardmethods/fig14.png" alt="Final classification for urban flood at ADM2 level: blue = very low; yellow = low; orange = medium; red = high"/>
 </div>
-<b>Figure 14</b> Final classification for urban flood at ADM2 level: blue = very low; yellow = low; orange = medium; red = high
 
 ## Coastal Flood Hazard Levels
 
@@ -113,15 +111,45 @@ For each water province and available return period it was then calculated wheth
 <div class="c-box-image">
   <img src="images/posts/hazardmethods/fig15.png" alt="Graph representing the number of countries with a WCI below 1700 m3 per capita per year in relation to the return period"/>
 </div>
-<b>Figure 15</b> Graph representing the number of countries with a WCI below 1700 m3 per capita per year in relation to the return period
 
 ### Results of classification
 The resulting water scarcity map per water province and per ADM2 Unit is shown in the figures below. The analysis was made on water province level first, because it is assumed that within a water province (a combination of watershed and countries borders) distributing of available water will occur towards water scarce areas when needed.
 
 <div class="c-box-image">
   <img src="images/posts/hazardmethods/fig16.png" alt="Water Crowding Index – Annual water availability per capita by water province"/>
-</div><b>Figure 16</b> Water Crowding Index – Annual water availability per capita by water province
+</div>
 
 <div class="c-box-image">
   <img src="images/posts/hazardmethods/fig17.png" alt="Water Crowding Index – Annual water availability per capita by ADM2 Unit"/>
-</div><b>Figure 17</b> Water Crowding Index – Annual water availability per capita by ADM2 Unit
+</div>
+
+## Tropical Cyclone Hazard Levels
+<div class="c-box"><span class="box-title"><b>Classification Summary:</b></span>
+  <p>Tropical cyclone is classified using wind speed, provided as frequency-severity data in raster format. The methodology follows that described in section 2.4.
+The damaging intensity threshold is 80 kilometers per hour for all hazard levels, using frequency thresholds of 50, 100 and 1000 years for high, medium and low hazard, respectively.</p>
+</div>
+
+Cyclone data used for hazard classification is the UNISDR Global Assessment Report 2015 (GAR15) . Based on the metadata, the “tropical cyclonic strong wind and storm surge model uses information from 2594 historical tropical cyclones, topography, terrain roughness, and bathymetry”. Topography was taken from the Shuttle Radar Topography Mission (SRTM) of NASA, which provides terrain elevation grids at a 90 meters resolution. 
+The dataset covers the return periods 50, 100, 250, 500 and 1000 years, containing the peak wind velocity in kilometers per hour (km/h). No return period more frequent than 50 years is available from GAR15. Note that this data does not include extra-tropical cyclone winds, for example those that affect Western Europe. Also note that this data does not include the impact of cyclone-induced storm surges. Storm surge is available in another GAR15 dataset, but is represented in ThinkHazard!  as one component of a coastal flood dataset (section 8.2).
+
+### Intensity
+The intensity of cyclones is described by the wind speed, e.g., Figure 18. Based on literature review, an intensity threshold of 80 km/h is applied, which corresponds to the 50-60 miles per hour (MPH) hurricane warning threshold applied by NOAA (U.S. National Oceanic and Atmospheric Administration). The intensity threshold also corresponds to the Beaufort scale 9, described as “strong/severe gale – [at which] first damages occur”. 
+
+<div class="c-box-image">
+  <img src="images/posts/hazardmethods/fig16.png" alt="Hurricane zoning in the United States, ranging from 60 miles per hour (first damages) up to higher than 90 miles per hour (most severe damages)"/>
+</div>
+
+### Frequency
+For cyclones, there are no community standards with respect to the frequency classes or return periods. Therefore, it is recommended to use the frequency classification as applied for river flood, based on human experience. However, as there is no global dataset with a return period more frequent than 50 years, the classification is as follows:
+The following frequency classes are used in ThinkHazard! version 2 (unchanged from version1):
+<ul><li>high: 10-year return period
+<li>medium: 50-year return period
+<li>low: 1000-year return period</ul>
+
+### Results of classification
+Figure 19 shows the results of cyclone hazard classification based on GAR15 data.
+
+<div class="c-box-image">
+  <img src="images/posts/hazardmethods/fig19.png" alt="Preliminary cyclone hazard classification for ADM2 Units using GAR15 global data"/>
+</div>
+
