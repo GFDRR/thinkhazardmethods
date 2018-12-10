@@ -171,7 +171,7 @@ Heat stress studies in the scientific literature that make use of the WBGT apply
 ### Frequency
 There are no standard return periods used in research or engineering design concerning extreme heat events. However, most scientific studies use a 20-year return period in analyzing extreme heat events. This return period is included and because of the consistency with existing literature, results for this return period can be easily compared and verified with previous studies. A short return period (5 years) reflects more frequent extreme heat events, and the longest return period that can be generated based on the 30 years of available daily maximum WGBT data is 100-year return period. For longer return periods, the uncertainties in projected intensity become too large due to the inherent uncertainties in the statistical processing of the input data. 
 The following frequency classes are used in ThinkHazard! version 2:
-<lu><li>high: 5-year return period
+<ul><li>high: 5-year return period
 <li>medium: 20-year return period
 <li>low: 100-year return period</ul>
 
