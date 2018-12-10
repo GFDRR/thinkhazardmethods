@@ -11,8 +11,7 @@ includes:
   - posts/_04-drrguidance
   - posts/05-risk_management_guidance
   - posts/_06-workflow
-  - posts/08-administrator_role
-  - posts/09-hazard_classifications
+  - posts/_08-hazardmethods
 
 search: true
 ---
