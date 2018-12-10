@@ -88,7 +88,7 @@ Hazard data for the same hazard may be provided with different intensity units. 
 
 A summary of damaging intensity parameters, units and thresholds used in the classification of probabilistic data (only one common unit shown for hazard):
 
-<table><tr><td><b>Hazard</td><td><b>Intensity parameter</td><td><b>Intensity Unit</td><td><tr><td><b>Intensity threshold value</td></tr><tr><td><b>High</td><td><b>Medium</td><td><b>Low</td></tr>
+<table><tr><td><b>Hazard</td><td><b>Intensity parameter</td><td><b>Intensity Unit</td><td><table><tr><td><b>Intensity threshold value</td></tr><tr><td><b>High</td><td><b>Medium</td><td><b>Low</td></tr></table></td></tr>
 <tr><td><b>Earthquake</td><td><b>Acceleration (PGA)</td><td><b>g</td><td><b>0.2</td><td><b>0.1</td><td><b>0.1</td></tr>
 <tr><td><b>Extreme heat</td><td><b>Wet Bulb Globe Temperature (WBGT)</td><td><b>°C</td><td><b>32</td><td><b>28</td><td><b>25</td></tr>
 <tr><td><b>River flood*</td><td><b>Inundation depth</td><td><b>m</td><td><b>0.5</td><td><b>0.5</td><td><b>0.5</td></tr>
