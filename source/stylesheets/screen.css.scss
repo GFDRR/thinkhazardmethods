@@ -449,7 +449,11 @@ html, body {
   dd {
     margin-left: 15px;
   }
-
+  
+  p {
+    text-align: justify;
+  }
+  
   p, li, dt, dd {
     line-height: 1.6;
     margin-top: 0;
