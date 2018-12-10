@@ -119,7 +119,7 @@ Suggested return periods for each hazard classified from probabilistic data:
 <tr><td>Cyclone</td><td>50</td><td>100</td><td>1000</td></tr>
 <tr><td>Tsunami</td><td>100</td><td>500</td><td>2500</td></tr>
 <tr><td>Water scarcity</td><td>5</td><td>50</td><td>1000</td></tr>
-<tr><td>Wildfire</td><td>2</td><td>10</td><td>30</td></tr></table>
+<tr><td>Wildfire</td><td>2</td><td>10</td><td>30</td></tr></table></center>
 
 ### Pre-processed data
 Preprocessing of data into a format suitable for ThinkHazard! may be needed if:
