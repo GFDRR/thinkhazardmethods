@@ -209,7 +209,7 @@ Hazard dataset provide seismic hazard different for PGA. To enable those dataset
 
 conversion table for units of earthquake data
 <table><tr><td>Paramete unit</td><td colspan=2><table><tr><td>Thresholds</td></tr>
-    <tr><td>High</td><td>Medium and Low</td></tr>
+    <tr><td>High</td><td>Medium and Low</td></tr></table></td></tr>
 <tr><td>PGA-g</td><td>0.2</td><td>0.1</td></tr>
 <tr><td>PGA-g-per</td><td>20</td><td>10</td></tr>
 <tr><td>PGA-gal</td><td>196.133</td><td>98.066</td></tr>
