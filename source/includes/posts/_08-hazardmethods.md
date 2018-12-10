@@ -29,9 +29,10 @@ The following frequency classes are used in ThinkHazard! version 2:
 <li>medium: 50-year return period
 <li>low: 1000-year return period
     
+ <br><br>
+ <center><b>Table 3</b> Example of rationale justifying the choice of return periods, for river flood hazard</center>
     
-    
-<table><tr><td>Name</td><td>Return period</td><td>Rationale</td></tr>
+<table><tr><td><b>Name</td><td><b>Return period</td><td><b>Rationale</td></tr>
 <tr><td>High</td><td>10 years</td><td>In many cases a River Flood event of once per year or once every five years already causes considerable damage. NOTE: This return period may not be available in all flood hazard assessments. Therefore, it is proposed to allow ThinkHazard! to use 25 years as an alternative.</td></tr>
 <tr><td>Medium</td><td>50 years</td><td>An event that would, on average, be expected to occur once or twice in a lifetime.</td></tr>
 <tr><td>Low</td><td>10,000 years</td><td>An event most people will not experience and will only be remembered by previous generations. 
