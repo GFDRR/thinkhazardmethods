@@ -46,11 +46,15 @@ Urban areas were identified for the definition of urban flood. This was using a 
 ### Results of classification
 The maps below indicate the ADM2 classification based on SSBN Ltd 90 m global flood hazard maps, which is used for global coverage for river flood and urban flood hazard in ThinkHazard! version 2.
 
-
+<div class="c-box-image">
+  <img src="images/posts/hazardmethods/fig13.png" alt="Final classification for river flood at ADM2 level: blue = very low; yellow = low; orange = medium; red = high"/>
+</div>
 <b>Figure 13</b> Final classification for river flood at ADM2 level: blue = very low; yellow = low; orange = medium; red = high
 
+<div class="c-box-image">
+  <img src="images/posts/hazardmethods/fig14.png" alt="Final classification for urban flood at ADM2 level: blue = very low; yellow = low; orange = medium; red = high"/>
+</div>
 <b>Figure 14</b> Final classification for urban flood at ADM2 level: blue = very low; yellow = low; orange = medium; red = high
-
 
 ## Coastal Flood Hazard Levels
 
@@ -101,8 +105,23 @@ The following frequency classes are used in ThinkHazard! version 2 (unchanged fr
     <tr><td><b>Name of category</td><td><b>Best Case RP</td><td><b>Average RP</td><td><b>Best Case chance</td><td><b>Average chance</td><td><b>Ragionale</td></tr>
 <tr><td>High</td><td>5 years</td><td>2 years</td><td>20%</td><td>50%</td><td>This category represents areas where water scarcity is common but do not occur every year. Many countries in this category experience water stress every other year.</td></tr>
 <tr><td>Medium</td><td>50 years</td><td>25 years</td><td>2%</td><td>4%</td><td>The 50 years return period was selected to represent water scarcity that occur once or twice in a lifetime. It corresponds to a large increase in number of water provinces which fall in this category.</td></tr>
-<tr><td>Low</td><td>1000</td><td>years</td><td>250 years</td><td>0.1%</td><td>0.4%</td><td>Water provinces and countries in this category experience droughts less than once in a human life time, but they may occur occasionally.</td></tr>
+<tr><td>Low</td><td>1000 years</td><td>250 years</td><td>0.1%</td><td>0.4%</td><td>Water provinces and countries in this category experience droughts less than once in a human life time, but they may occur occasionally.</td></tr>
 <tr><td>Very low</td><td>>1000 years</td><td>1*10^(24) years</td><td>0%</td><td>0%</td><td>In this category no water stress is expected based on longest return period under the current climate, current models and data. However, some uncertainty remains.</td></tr></table>
 
-For each water province and available return period it was then calculated whether Falkenmark’s threshold of 1700 m3 per capita per year was met. In other words, for each water province and return period it was determined if water stress would occur. Figure 15 shows the number of countries with a WCI below 1700 m3 of renewable water resources per capita per year for several return periods. This graph is used as basis for the categorization. 
+For each water province and available return period it was then calculated whether Falkenmark’s threshold of 1700 m3 per capita per year was met. In other words, for each water province and return period it was determined if water stress would occur. Figure 15 shows the number of countries with a WCI below 1700 m3 of renewable water resources per capita per year for several return periods. This graph is used as basis for the categorization.
 
+<div class="c-box-image">
+  <img src="images/posts/hazardmethods/fig15.png" alt="Graph representing the number of countries with a WCI below 1700 m3 per capita per year in relation to the return period"/>
+</div>
+<b>Figure 15</b> Graph representing the number of countries with a WCI below 1700 m3 per capita per year in relation to the return period
+
+### Results of classification
+The resulting water scarcity map per water province and per ADM2 Unit is shown in the figures below. The analysis was made on water province level first, because it is assumed that within a water province (a combination of watershed and countries borders) distributing of available water will occur towards water scarce areas when needed.
+
+<div class="c-box-image">
+  <img src="images/posts/hazardmethods/fig16.png" alt="Water Crowding Index – Annual water availability per capita by water province"/>
+</div><b>Figure 16</b> Water Crowding Index – Annual water availability per capita by water province
+
+<div class="c-box-image">
+  <img src="images/posts/hazardmethods/fig17.png" alt="Water Crowding Index – Annual water availability per capita by ADM2 Unit"/>
+</div><b>Figure 17</b> Water Crowding Index – Annual water availability per capita by ADM2 Unit
