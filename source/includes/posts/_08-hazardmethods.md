@@ -27,7 +27,7 @@ An alternative approach to using ranges of return periods, would be to interpola
 The following frequency classes are used in ThinkHazard! version 2:
 <ul><li>high: 10-year return period
 <li>medium: 50-year return period
-<li>low: 1000-year return period
+<li>low: 1000-year return period</ul>
     
  <br>
  <center>Example of rationale justifying the choice of return periods, for river flood hazard
@@ -125,7 +125,7 @@ The resulting water scarcity map per water province and per ADM2 Unit is shown i
 
 ## Tropical Cyclone Hazard Levels
 <div class="c-box"><span class="box-title"><b>Classification Summary:</b></span>
-  <p>Tropical cyclone is classified using wind speed, provided as frequency-severity data in raster format. The methodology follows that described in section 2.4.
+  <p>Tropical cyclone is classified using wind speed, provided as frequency-severity data in raster format. The methodology follows that described previously.
 The damaging intensity threshold is 80 kilometers per hour for all hazard levels, using frequency thresholds of 50, 100 and 1000 years for high, medium and low hazard, respectively.</p>
 </div>
 
@@ -133,7 +133,7 @@ Cyclone data used for hazard classification is the UNISDR Global Assessment Repo
 The dataset covers the return periods 50, 100, 250, 500 and 1000 years, containing the peak wind velocity in kilometers per hour (km/h). No return period more frequent than 50 years is available from GAR15. Note that this data does not include extra-tropical cyclone winds, for example those that affect Western Europe. Also note that this data does not include the impact of cyclone-induced storm surges. Storm surge is available in another GAR15 dataset, but is represented in ThinkHazard!  as one component of a coastal flood dataset (section 8.2).
 
 ### Intensity
-The intensity of cyclones is described by the wind speed, e.g., Figure 18. Based on literature review, an intensity threshold of 80 km/h is applied, which corresponds to the 50-60 miles per hour (MPH) hurricane warning threshold applied by NOAA (U.S. National Oceanic and Atmospheric Administration). The intensity threshold also corresponds to the Beaufort scale 9, described as “strong/severe gale – [at which] first damages occur”. 
+The intensity of cyclones is described by the wind speed, e.g. below figure. Based on literature review, an intensity threshold of 80 km/h is applied, which corresponds to the 50-60 miles per hour (MPH) hurricane warning threshold applied by NOAA (U.S. National Oceanic and Atmospheric Administration). The intensity threshold also corresponds to the Beaufort scale 9, described as “strong/severe gale – [at which] first damages occur”. 
 
 <div class="c-box-image">
   <img src="images/posts/hazardmethods/fig16.png" alt="Hurricane zoning in the United States, ranging from 60 miles per hour (first damages) up to higher than 90 miles per hour (most severe damages)"/>
@@ -147,9 +147,40 @@ The following frequency classes are used in ThinkHazard! version 2 (unchanged fr
 <li>low: 1000-year return period</ul>
 
 ### Results of classification
-Figure 19 shows the results of cyclone hazard classification based on GAR15 data.
+Next figure shows the results of cyclone hazard classification based on GAR15 data.
 
 <div class="c-box-image">
   <img src="images/posts/hazardmethods/fig19.png" alt="Preliminary cyclone hazard classification for ADM2 Units using GAR15 global data"/>
 </div>
+
+## Extreme Heat Hazard Levels (new in version 2)
+<div class="c-box"><span class="box-title"><b>Classification Summary:</b></span>
+  <p>Extreme heat hazard classification is based on daily maximum Wet Bulb Globe Temperature, provided as frequency-severity data in raster format. The methodology follows that described in section 2.4. 
+A specific temperature threshold is defined for each hazard level, at the 5, 20, and 100-year return periods, as described below. The full river and urban flood hazard classification methodology, developed by VITO, is provided at the public ThinkHazard! Methodology Google Drive folder.</p>
+</div>
+
+Extreme Heat hazard is classified based on an existing and widely accepted heat stress indicator, the Wet Bulb Globe Temperature (WBGT, in °C) – more specifically the daily maximum WGBT. The WBGT has an obvious relevance for human health, but it is relevant in all kinds of projects and sectors, including infrastructure related, as heat stress affects personnel and stakeholders, and therefore the design of buildings and infrastructure. In general, the WBGT is a relevant enough proxy to quantify the strain on physical infrastructure (energy, water, transport), such as increased demands for water and electricity, which may also affect decisions related to infrastructure.
+
+### Intensity
+Heat stress studies in the scientific literature that make use of the WBGT apply thresholds of 28°C and 32°C to categorise heat stress risk. The damaging intensity thresholds are applied folling this definition of slight/low (<28°C), moderate/high (28-32°C) and severe/very high (>32°C) heat stress:
+<lu><li>high: >32°C
+    <li>medium: >28°C
+    <li>low: >25°C
+    <li>very low: <25°C</ul>
+        
+### Frequency
+There are no standard return periods used in research or engineering design concerning extreme heat events. However, most scientific studies use a 20-year return period in analyzing extreme heat events. This return period is included and because of the consistency with existing literature, results for this return period can be easily compared and verified with previous studies. A short return period (5 years) reflects more frequent extreme heat events, and the longest return period that can be generated based on the 30 years of available daily maximum WGBT data is 100-year return period. For longer return periods, the uncertainties in projected intensity become too large due to the inherent uncertainties in the statistical processing of the input data. 
+The following frequency classes are used in ThinkHazard! version 2:
+<lu><li>high: 5-year return period
+<li>medium: 20-year return period
+<li>low: 100-year return period</ul>
+
+### Results of classification
+The classification of hazard at ADM2 Units based on a global probabilistic WBGT extreme heat dataset developed by VITO specifically for ThinkHazard!, is as follows:
+
+<div class="c-box-image">
+  <img src="images/posts/hazardmethods/fig20.png" alt="Heat hazard classification map at the ADM2-level. The figure visualizes the location with very low (dark green), low (green), medium (orange) and high (red) extreme heat risk"/>
+</div>
+
+
 
