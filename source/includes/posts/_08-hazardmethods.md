@@ -294,7 +294,7 @@ The procedure is applied as follows:
     <ul><li>If it was recorded an eruption in the last 2000 years (CE), then hazard level is high,
     <liIf it was recorded an eruption in the Holocene (last 10000 years), then hazard level is medium
     <li>If it was recorded an eruption in more ancient times, then hazard level is low
-    <li>If no eruption of the volcano has been reported, then hazard level is low
+    <li>If no eruption of the volcano has been reported, then hazard level is low</ul>
         
 To account for the fact that damage from a volcano does not occur only at the vent, but several tens of kilometers around the vent, the hazard level of each volcano is applied to a circular area around the volcano coordinate location.
 The maximum extent of proximal hazards is approximately 100 kilometers from a volcanic vent. This distance does not account for topographic influences that constrain the flow of lahars and lava. The resulting raster map of hazard levels provides a crude assessment of proximal volcanic hazard (excluding impacts of ash and gas), see Figure 27. This map is uploaded to the ThinkHazard! database. The tool then associates the hazard level to administrative units following the normal procedure: intersection with administrative polygons and maximum of hazard level on a given unit.
