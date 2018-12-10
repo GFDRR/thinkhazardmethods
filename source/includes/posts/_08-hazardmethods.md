@@ -102,7 +102,7 @@ The following frequency classes are used in ThinkHazard! version 2 (unchanged fr
     <br><br>
 
 <table>
-    <tr><td><b>Name of category</td><td><b>Best Case RP</td><td><b>Average RP</td><td><b>Best Case chance</td><td><b>Average chance</td><td><b>Ragionale</td></tr>
+    <tr><td><b>Name of category</td><td><b>Best-case RP</td><td><b>Average RP</td><td><b>Best-case chance</td><td><b>Average chance</td><td><b>Rationale</td></tr>
 <tr><td>High</td><td>5 years</td><td>2 years</td><td>20%</td><td>50%</td><td>This category represents areas where water scarcity is common but do not occur every year. Many countries in this category experience water stress every other year.</td></tr>
 <tr><td>Medium</td><td>50 years</td><td>25 years</td><td>2%</td><td>4%</td><td>The 50 years return period was selected to represent water scarcity that occur once or twice in a lifetime. It corresponds to a large increase in number of water provinces which fall in this category.</td></tr>
 <tr><td>Low</td><td>1000 years</td><td>250 years</td><td>0.1%</td><td>0.4%</td><td>Water provinces and countries in this category experience droughts less than once in a human life time, but they may occur occasionally.</td></tr>
