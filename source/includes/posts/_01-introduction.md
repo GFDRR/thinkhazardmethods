@@ -4,14 +4,14 @@
 
 # Introduction
 
-Hazard information is a critical input to disaster risk management, building resilience of urban areas, infrastructure and communities. The Open Access to Risk Information area of engagement aims to make high-quality risk information available faster and at lower costs, and develop new tools that allow decision-makers and communities to collect, share, and understand risk information. 
+Risk information is a critical input to disaster risk management, building resilience of urban areas, infrastructure and communities. The Open Access to Risk Information area of engagement aims to make high-quality risk information available faster and at lower costs, and develop new tools that allow decision-makers and communities to collect, share, and understand risk information. 
 
 The ThinkHazard! project was initiated in 2015 to facilitate greater access to hazard information and risk management guidance for development sector professionals. The open access thinkhazard.org website enables users to screen potential project locations for the existence of multiple natural hazards, then to obtain guidance on how to manage the risks to their project, and any impacts of their project on the local hazard. Version 1 of ThinkHazard! was used over 140,000 times in 200 countries, and has been adopted into World Bank Operations Portal for core use in project planning. This report has been updated to reflect new hazards and revisions in methodology, made in the development of ThinkHazard! version 2, released in July 2017.
 
 ThinkHazard! is developed and maintained by the Global Facility for Disaster Reduction and Recovery <a href="http://gfdrr.org" target="_blank">(GFDRR)</a>.
  
 ## Objective of ThinkHazard! 
-Hazard information is a critical input to disaster risk management (DRM) and building resilience of urban areas, infrastructure and communities. Interpretation of hazard information to determine potential impact and, in turn, implement robust a risk management strategy requires knowledge of often highly technical data. Additionally, hazard data is generated in many different formats from many organizations. If the data is made available publicly at all, it is via a growing number of online sources and data portals. So, the task to find hazard data sets, decide which data set to use for a given purpose, and then interpret the data can require an increasing amount of time and prior knowledge. 
+Risk information is a critical input to disaster risk management (DRM) and building resilience of urban areas, infrastructure and communities. Interpretation of hazard information to determine potential impact and, in turn, implement robust a risk management strategy requires knowledge of often highly technical data. Additionally, hazard data is generated in many different formats from many organizations. If the data is made available publicly at all, it is via a growing number of online sources and data portals. So, the task to find hazard data sets, decide which data set to use for a given purpose, and then interpret the data can require an increasing amount of time and prior knowledge. 
 
 DRM projects have too often been executed without full appreciation of the range of hazards and level of each hazard that exist in a project area. This can result in underestimation of disaster risk and development of a project that is potentially not robust enough to withstand the impacts of one or more hazards that could affect the project in the future. Access to, and appropriate use of hazard and risk information remains a barrier to mainstreaming DRM into development projects.  
 ThinkHazard! is an analytical tool dedicated to improving knowledge and understanding of natural hazards. It was envisioned that the ThinkHazard! primary user would be development sector professionals, who need to gather hazard information while planning projects. However, the benefits of ThinkHazard! stretch beyond the development sector, into general education about global distribution of multiple hazards and how to manage them. 
@@ -38,3 +38,10 @@ New versions can be developed using the open-source code as a basis, by includin
 
 ## How to Use this Guide
 This guide describes the hazard levels shown in ThinkHazard!, and how the raw hazard data is classified into hazard levels. A general section describes the use of global and local data, and how the tool uses multiple sources of hazard data for the same area. It then presents sections showing the classification of data for each hazard in turn, because the method varies from hazard to hazard.
+
+##Quick Links:
+To download data layers used in ThinkHazard! Via the GeoNode API, use:
+https://www.geonode-gfdrrlab.org/api/layers/
+CTRL+F "layer_name"
+And access the layer using https://www.geonode-gfdrrlab.org/uploaded/layers/layer_name.tif
+
