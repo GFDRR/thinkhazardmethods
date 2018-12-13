@@ -42,7 +42,7 @@ The technical workflow (contained in the ThinkHazard! processing code) identifie
                 <li>If the intensity threshold is exceeded, High hazard level is stored for the ADM2 unit, in the processing database. 
                 <li>If the High hazard threshold is not exceeded, the process is performed on the Medium hazard threshold and data. If Medium hazard threshold is exceeded, Medium hazard level is stored for the ADM2 unit.
                 <li>If the Medium hazard threshold is not exceeded, the process is performed on the Low hazard threshold and data. If Low hazard threshold is exceeded, Low hazard level is stored for the ADM2 unit.
-                <li>If none of the three hazard levels are exceeded and there are intensity values, the value ‘Very Low’ is stored.</ol></ul>
+                <li>If none of the three hazard levels are exceeded and there are intensity values, the value ‘Very Low’ is stored.</ol></ul></ol>
             <li> A decision is made on which dataset to present in ThinkHazard! (i.e. which values to store in the public database), if there has been more than one dataset available to classify hazard levels. 
                 <ol type="a"><li>Outputs of the above process are prioritized according to:
                     <ul><li>Data quality
