@@ -208,7 +208,7 @@ Illustration of probability of damages for vulnerable buildings according to the
 Hazard dataset provide seismic hazard different for PGA. To enable those datasets to be included in ThinkHazard!, several units are accepted in the processing algorithm, which can read PGA in terms of a decimal or percentage value of Gravity (g), or PGA in terms of SI units (e.g., gal or cm/s2) (see Table 6).
 
 Conversion table for units of earthquake data
-<table><tr><td>Paramete unit</td><td colspan=2><table><tr><td colspan=2>Thresholds</td></tr>
+<table><tr><td>Parameter unit</td><td colspan=2><table><tr><td colspan=2>Thresholds</td></tr>
     <tr><td>High</td><td>Medium and Low</td></tr></table></td></tr>
 <tr><td>PGA-g</td><td>0.2</td><td>0.1</td></tr>
 <tr><td>PGA-g-per</td><td>20</td><td>10</td></tr>
