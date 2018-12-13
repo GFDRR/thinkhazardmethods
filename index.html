@@ -141,7 +141,7 @@
 
 <h2 id="objective-of-thinkhazard">Objective of ThinkHazard!</h2>
 
-<p>Hazard information is a critical input to disaster risk management (DRM) and building resilience of urban areas, infrastructure and communities. Interpretation of hazard information to determine potential impact and, in turn, implement robust a risk management strategy requires knowledge of often highly technical data. Additionally, hazard data is generated in many different formats from many organizations. If the data is made available publicly at all, it is via a growing number of online sources and data portals. So, the task to find hazard data sets, decide which data set to use for a given purpose, and then interpret the data can require an increasing amount of time and prior knowledge. </p>
+<p>Interpretation of hazard information to determine potential impact and, in turn, implement robust a risk management strategy requires knowledge of often highly technical data. Additionally, hazard data is generated in many different formats from many organizations. If the data is made available publicly at all, it is via a growing number of online sources and data portals. So, the task to find hazard data sets, decide which data set to use for a given purpose, and then interpret the data can require an increasing amount of time and prior knowledge. </p>
 
 <p>DRM projects have too often been executed without full appreciation of the range of hazards and level of each hazard that exist in a project area. This can result in underestimation of disaster risk and development of a project that is potentially not robust enough to withstand the impacts of one or more hazards that could affect the project in the future. Access to, and appropriate use of hazard and risk information remains a barrier to mainstreaming DRM into development projects.<br>
 ThinkHazard! is an analytical tool dedicated to improving knowledge and understanding of natural hazards. It was envisioned that the ThinkHazard! primary user would be development sector professionals, who need to gather hazard information while planning projects. However, the benefits of ThinkHazard! stretch beyond the development sector, into general education about global distribution of multiple hazards and how to manage them. </p>
@@ -460,7 +460,7 @@ The technical workflow (contained in the ThinkHazard! processing code) identifie
                 <li>If the intensity threshold is exceeded, High hazard level is stored for the ADM2 unit, in the processing database. 
                 <li>If the High hazard threshold is not exceeded, the process is performed on the Medium hazard threshold and data. If Medium hazard threshold is exceeded, Medium hazard level is stored for the ADM2 unit.
                 <li>If the Medium hazard threshold is not exceeded, the process is performed on the Low hazard threshold and data. If Low hazard threshold is exceeded, Low hazard level is stored for the ADM2 unit.
-                <li>If none of the three hazard levels are exceeded and there are intensity values, the value ‘Very Low’ is stored.</ol>
+                <li>If none of the three hazard levels are exceeded and there are intensity values, the value ‘Very Low’ is stored.</ol></ul></ol>
 
 <p><li> A decision is made on which dataset to present in ThinkHazard! (i.e. which values to store in the public database), if there has been more than one dataset available to classify hazard levels. 
                 <ol type="a"><li>Outputs of the above process are prioritized according to:
@@ -508,22 +508,23 @@ The following frequency classes are used in ThinkHazard! version 2:
 <li>medium: 50-year return period
 <li>low: 1000-year return period</ul></p>
 
-<p><br>
- <center>Example of rationale justifying the choice of return periods, for river flood hazard</p>
+<p><center>Example of rationale justifying the choice of return periods, for river flood hazard</center>
+<table><tr><td><b>Name</b></td><td><b>Return period</b></td><td><b>Rationale</b></td></tr></p>
 
-<table><tr><td><b>Name</td><td><b>Return period</td><td><b>Rationale</td></tr>
-<tr><td>High</td><td>10 years</td><td>In many cases a River Flood event of once per year or once every five years already causes considerable damage. NOTE: This return period may not be available in all flood hazard assessments. Therefore, it is proposed to allow ThinkHazard! to use 25 years as an alternative.</td></tr>
+<p><tr><td>High</td><td>10 years</td><td>In many cases a River Flood event of once per year or once every five years already causes considerable damage. NOTE: This return period may not be available in all flood hazard assessments. Therefore, it is proposed to allow ThinkHazard! to use 25 years as an alternative.</td></tr>
 <tr><td>Medium</td><td>50 years</td><td>An event that would, on average, be expected to occur once or twice in a lifetime.</td></tr>
 <tr><td>Low</td><td>10,000 years</td><td>An event most people will not experience and will only be remembered by previous generations. 
-NOTE: Often the 10,000 year return period will not be available. It is proposed to use the highest available return period (and longer than 50 years) for the ‘Low’ hazard class. This can typically be between 100 and 1,000 years.</td></tr>
-<tr><td>Very low</td><td>Intensity not exceeded at the ‘low’ return period used.</td><td>No floods expected based on current climate, current models and data. However, some uncertainty remains.</td></tr></table></center>
+NOTE: Often the 10,000 year return period will not be available. It is proposed to use the highest available return period (and longer than 50 years) for the Low hazard class. This can typically be between 100 and 1,000 years.</td></tr>
+<tr><td>Very low</td><td>Intensity not exceeded at the low return period used.</td><td>No floods expected based on current climate, current models and data. However, some uncertainty remains.</td></tr></table></p>
 
-### Other notes on methodology
-Areas of permanent water are masked in the method applied, so river channels and lakes are not considered in the calculation – these water bodies would contribute large areas that exceed the intensity threshold, but due to their permanent nature cannot be considered as periodically flooded. The 3 arc-second (~90m) G3WBM mask (Yamazaki et al., 2015) based on multi-temporal Landsat images is used by SSBN to mask their 90m global flood product.
-Urban areas were identified for the definition of urban flood. This was using a combination of two remotely sensed datasets indicating urban activity: the Global Urban Footprint (GUF)  and the 2013 NOAA DMSP ‘stable lights’ (NTLD)  datasets.
+<h3 id="other-notes-on-methodology">Other notes on methodology</h3>
 
-### Results of classification
-The maps below indicate the ADM2 classification based on SSBN Ltd 90 m global flood hazard maps, which is used for global coverage for river flood and urban flood hazard in ThinkHazard! version 2.
+<p>Areas of permanent water are masked in the method applied, so river channels and lakes are not considered in the calculation – these water bodies would contribute large areas that exceed the intensity threshold, but due to their permanent nature cannot be considered as periodically flooded. The 3 arc-second (~90m) G3WBM mask (Yamazaki et al., 2015) based on multi-temporal Landsat images is used by SSBN to mask their 90m global flood product.
+Urban areas were identified for the definition of urban flood. This was using a combination of two remotely sensed datasets indicating urban activity: the Global Urban Footprint (GUF)  and the 2013 NOAA DMSP ‘stable lights’ (NTLD)  datasets.</p>
+
+<h3 id="results-of-classification">Results of classification</h3>
+
+<p>The maps below indicate the ADM2 classification based on SSBN Ltd 90 m global flood hazard maps, which is used for global coverage for river flood and urban flood hazard in ThinkHazard! version 2.</p>
 
 <div class="c-box-image">
   <img src="images/posts/hazardmethods/fig13.png" alt="Final classification for river flood at ADM2 level: blue = very low; yellow = low; orange = medium; red = high"/>
@@ -533,50 +534,55 @@ The maps below indicate the ADM2 classification based on SSBN Ltd 90 m global fl
   <img src="images/posts/hazardmethods/fig14.png" alt="Final classification for urban flood at ADM2 level: blue = very low; yellow = low; orange = medium; red = high"/>
 </div>
 
-## Coastal Flood Hazard Levels
+<h2 id="coastal-flood-hazard-levels">Coastal Flood Hazard Levels</h2>
 
 <div class="c-box"><span class="box-title"><b>Classification Summary:</b></span>
   <p>Coastal flood is classified using onshore flood depth data, provided as frequency-severity data in raster format. The methodology follows that described in section 2.4. The damaging intensity thresholds are 2 m for high hazard, and 0.5 m for low and medium hazard. Hazard is classified using frequency thresholds of 10, 50 and 100 years for high, medium and low hazard, respectively.</p>
 </div>
 
-Coastal flooding is caused by increased elevation of coastal waters above usual sea levels commonly caused by a combination of phenomena: Astronomical tide (natural cyclic sea level variation); storm surge during a storm or cyclone (raised water elevation due to low atmospheric pressure and accumulation of water due to wind); and wave set-up resulting from the energy transferred from offshore waves to the water column at coast. Storm surge hazard maps do not necessarily include the effect of tide and wave set-up, therefore may not encompass the full potential hazard.
-The extent of inundated area and the depth of floodwater depend on intensity of the event and local topography. Extensive studies and simulation are needed to determine inundation parameters from wave data, since it requires an elevation model comprising both onshore topography and sea floor bathymetry. The ideal input to Think Hazard! is onshore inundation depth maps or inundation depth at the coastline to process the hazard categorization procedure. The former has been provided with global coverage by Muis et al. (2016), who have conducted this type of analysis for coastal flooding; this dataset provides the global coverage for coastal flood hazard in ThinkHazard! version 2.
+<p>Coastal flooding is caused by increased elevation of coastal waters above usual sea levels commonly caused by a combination of phenomena: Astronomical tide (natural cyclic sea level variation); storm surge during a storm or cyclone (raised water elevation due to low atmospheric pressure and accumulation of water due to wind); and wave set-up resulting from the energy transferred from offshore waves to the water column at coast. Storm surge hazard maps do not necessarily include the effect of tide and wave set-up, therefore may not encompass the full potential hazard.
+The extent of inundated area and the depth of floodwater depend on intensity of the event and local topography. Extensive studies and simulation are needed to determine inundation parameters from wave data, since it requires an elevation model comprising both onshore topography and sea floor bathymetry. The ideal input to Think Hazard! is onshore inundation depth maps or inundation depth at the coastline to process the hazard categorization procedure. The former has been provided with global coverage by Muis et al. (2016), who have conducted this type of analysis for coastal flooding; this dataset provides the global coverage for coastal flood hazard in ThinkHazard! version 2.</p>
 
-### Intensity
-Damaging intensity threshold is based on a similar rationale as for river flood. The values representing typical thresholds for which significant changes in damages on buildings occur are:
+<h3 id="intensity">Intensity</h3>
+
+<p>Damaging intensity threshold is based on a similar rationale as for river flood. The values representing typical thresholds for which significant changes in damages on buildings occur are:
 <ul><li>For low and medium thresholds, 0.5 m: Flood mitigation by sandbags and other preliminary measures are no longer possible. This is a typical height of tables and light switches.
 <li>For high threshold, 2.0 m: The first floor and its interior are completely flooded. More threat to life occurs with this threshold.
-</ul>
+</ul></p>
 
-### Frequency
-The selected frequency thresholds for flood hazard are related to likelihood of experiencing flood in a human lifetime. The following frequency classes are used in ThinkHazard! version 2 (unchanged from version 1):
+<h3 id="frequency">Frequency</h3>
+
+<p>The selected frequency thresholds for flood hazard are related to likelihood of experiencing flood in a human lifetime. The following frequency classes are used in ThinkHazard! version 2 (unchanged from version 1):
 <ul><li>high: 10-year return period
 <li>medium: 50-year return period
 <li>low: 100-year return period</ul>
-<br><br>
+<br><br></p>
 
-## Water Scarcity Hazard Levels
+<h2 id="water-scarcity-hazard-levels">Water Scarcity Hazard Levels</h2>
+
 <div class="c-box"><span class="box-title"><b>Classification Summary:</b></span>
   <p>Hazard is classified using a Water Stress Index, which reflects the availability of water per person per year – a measure of water stress based on hydrological drought and water use.
 Water scarcity is the only hazard in ThinkHazard! that uses an ‘inverse damaging intensity threshold’. All other hazards are classified based on intensity value being exceeded. Water scarcity becomes more serious as the water availability decreases, so a lower water availability per capita per year translates to higher hazard.
 Hazard is classified as high, when water availability is <500 m3capita/yr at the 5-year return period. Hazard is classified medium when water availability is <1000 m3capita/yr at the 50-year return period. Finally, hazard is classified low when water availability is <1700 m3capita/yr at the 100-year return period.</p>
 </div>
 
-Discussion is ongoing over how to best represent drought in ThinkHazard! – whether meteorological, hydrological, or agricultural drought. From version 1, it was chosen to represent drought in terms of water scarcity, using a global dataset of Water Crowding Index (WCI) (Veldkamp et al., 2015) based on water availability per capita (Falkenmark et al., 1989). This index is based on estimates of water requirements in the household, agricultural, industrial and energy sectors, and the needs of the environment.
+<p>Discussion is ongoing over how to best represent drought in ThinkHazard! – whether meteorological, hydrological, or agricultural drought. From version 1, it was chosen to represent drought in terms of water scarcity, using a global dataset of Water Crowding Index (WCI) (Veldkamp et al., 2015) based on water availability per capita (Falkenmark et al., 1989). This index is based on estimates of water requirements in the household, agricultural, industrial and energy sectors, and the needs of the environment.
 Water availability data are available as grid rasters and are summarized per water province (a combination of catchments and administrative areas), as well as for several return periods (2, 5, 10, 25, 50, 100, 250, 500 and 1000 years). Water availability is determined over these timeframes from an ensemble of five global circulation models (CMIP5), covering the historic period 1975-2004. This was combined with the population density in 2010 to determine the water availability per capita or Water Crowding Index (WCI) for the current situation.
 Assumptions include: 1) This data includes surface water (rivers and lakes) and not soil moisture or groundwater; 2) Aggregation of effects to water provinces includes the effects of flow within a water province and the assumption that it is possible to mitigate drought by distributing water within a province (but not between provinces). Real water stress risks may be lower than represented by these data due to these assumptions. 
-The rationale for the categorization choice is given in Table 4. Based on the return periods delimiting each category, the “best case” chance (1/best case Return Period) could be obtained.
+The rationale for the categorization choice is given in Table 4. Based on the return periods delimiting each category, the “best case” chance (1/best case Return Period) could be obtained.</p>
 
-### Intensity
-It was estimated that 1700 m3 of renewable water resources per capita per year was a threshold, below which a country would experience water stress. For ThinkHazard! the threshold of <500 m3/capita/yr is used for high hazard, as it represents absolute water stress. Thresholds of <1000 m3/capita/yr and <1700 m3/capita/yr are used for medium and low hazard level, as these represent severe water stress and moderate water stress, respectively.
+<h3 id="intensity">Intensity</h3>
 
-### Frequency
-For each category of water scarcity (<500, <1000, and <1700 m3/capita/yr) and return period of original data, the average WCI in each ADM2 Unit was calculated. A trend line and corresponding (power) equation was fitted to this data, to obtain an equation with which the average return period of water stress could be calculated. The average return period and ‘best-case chance’ (i.e. longest possible return period) are related much like average and standard deviation. Both indicate how often water scarcity will occur in a certain water scarcity category, but the former represents the average chance of water scarcity occurring. The other represents the chance of a drought event occurring in the “best case” scenario where an area experiences water scarcity much less frequently than the average country of the same classified hazard. 
+<p>It was estimated that 1700 m3 of renewable water resources per capita per year was a threshold, below which a country would experience water stress. For ThinkHazard! the threshold of &lt;500 m3/capita/yr is used for high hazard, as it represents absolute water stress. Thresholds of &lt;1000 m3/capita/yr and &lt;1700 m3/capita/yr are used for medium and low hazard level, as these represent severe water stress and moderate water stress, respectively.</p>
+
+<h3 id="frequency">Frequency</h3>
+
+<p>For each category of water scarcity (<500, <1000, and <1700 m3/capita/yr) and return period of original data, the average WCI in each ADM2 Unit was calculated. A trend line and corresponding (power) equation was fitted to this data, to obtain an equation with which the average return period of water stress could be calculated. The average return period and ‘best-case chance’ (i.e. longest possible return period) are related much like average and standard deviation. Both indicate how often water scarcity will occur in a certain water scarcity category, but the former represents the average chance of water scarcity occurring. The other represents the chance of a drought event occurring in the “best case” scenario where an area experiences water scarcity much less frequently than the average country of the same classified hazard. 
 The following frequency classes are used in ThinkHazard! version 2 (unchanged from version1):
 <ul><li>high: 5-year return period
 <li>medium: 50-year return period
 <li>low: 1000-year return period</ul>
-    <br><br>
+    <br><br></p>
 
 <table>
     <tr><td><b>Name of category</td><td><b>Best-case RP</td><td><b>Average RP</td><td><b>Best-case chance</td><td><b>Average chance</td><td><b>Rationale</td></tr>
@@ -648,8 +654,8 @@ A specific temperature threshold is defined for each hazard level, at the 5, 20,
 
 <h3 id="intensity">Intensity</h3>
 
-<p>Heat stress studies in the scientific literature that make use of the WBGT apply thresholds of 28°C and 32°C to categorise heat stress risk. The damaging intensity thresholds are applied folling this definition of slight/low (<28°C), moderate/high (28-32°C) and severe/very high (>32°C) heat stress:
-<lu><li>high: &gt;32°C
+<p>Heat stress studies in the scientific literature that make use of the WBGT apply thresholds of 28°C and 32°C to categorise heat stress risk. The damaging intensity thresholds are applied folling this definition of slight/low (<28°C), moderate/high (28-32°C) and severe/very high (> 32°C) heat stress:
+<ul><li>high: &gt;32°C
     <li>medium: &gt;28°C
     <li>low: &gt;25°C
     <li>very low: <25°C</ul></p>
@@ -698,7 +704,7 @@ The European Macroseismic Scale  (EMS98), ranks seismic shaking according to eff
 <p>Hazard dataset provide seismic hazard different for PGA. To enable those datasets to be included in ThinkHazard!, several units are accepted in the processing algorithm, which can read PGA in terms of a decimal or percentage value of Gravity (g), or PGA in terms of SI units (e.g., gal or cm/s2) (see Table 6).</p>
 
 <p>Conversion table for units of earthquake data
-<table><tr><td>Paramete unit</td><td colspan=2><table><tr><td colspan=2>Thresholds</td></tr>
+<table><tr><td>Parameter unit</td><td colspan=2><table><tr><td colspan=2>Thresholds</td></tr>
     <tr><td>High</td><td>Medium and Low</td></tr></table></td></tr>
 <tr><td>PGA-g</td><td>0.2</td><td>0.1</td></tr>
 <tr><td>PGA-g-per</td><td>20</td><td>10</td></tr>
@@ -793,9 +799,10 @@ The procedure is applied as follows:
         <li>If VEI<3, then hazard level is low</ul>
 <li>If the VEI index value is not available, hazard level is associated according to the date of last known eruption:
     <ul><li>If it was recorded an eruption in the last 2000 years (CE), then hazard level is high,
-    <liIf it was recorded an eruption in the Holocene (last 10000 years), then hazard level is medium
+    <li>If it was recorded an eruption in the Holocene (last 10000 years), then hazard level is medium
     <li>If it was recorded an eruption in more ancient times, then hazard level is low
-    <li>If no eruption of the volcano has been reported, then hazard level is low</ul></p>
+    <li>If no eruption of the volcano has been reported, then hazard level is very low</ul>
+</ul></p>
 
 <p>To account for the fact that damage from a volcano does not occur only at the vent, but several tens of kilometers around the vent, the hazard level of each volcano is applied to a circular area around the volcano coordinate location.
 The maximum extent of proximal hazards is approximately 100 kilometers from a volcanic vent. This distance does not account for topographic influences that constrain the flow of lahars and lava. The resulting raster map of hazard levels provides a crude assessment of proximal volcanic hazard (excluding impacts of ash and gas), see Figure 27. This map is uploaded to the ThinkHazard! database. The tool then associates the hazard level to administrative units following the normal procedure: intersection with administrative polygons and maximum of hazard level on a given unit.</p>
