@@ -10,10 +10,8 @@ includes:
   - posts/_02-hazarddata
   - posts/_04-drrguidance
   - posts/05-risk_management_guidance
-  - posts/06-other_tool_features
-  - posts/07-architecture_tech_workflow
-  - posts/08-administrator_role
-  - posts/09-hazard_classifications
+  - posts/_06-workflow
+  - posts/_08-hazardmethods
 
 search: true
 ---
