@@ -47,9 +47,6 @@ The maps below indicate the ADM2 classification based on SSBN Ltd 90 m global fl
 
 <div class="c-box-image">
   <img src="images/posts/hazardmethods/fig13.png" alt="Final classification for river flood at ADM2 level: blue = very low; yellow = low; orange = medium; red = high"/>
-</div>
-
-<div class="c-box-image">
   <img src="images/posts/hazardmethods/fig14.png" alt="Final classification for urban flood at ADM2 level: blue = very low; yellow = low; orange = medium; red = high"/>
 </div>
 
@@ -116,9 +113,6 @@ The resulting water scarcity map per water province and per ADM2 Unit is shown i
 
 <div class="c-box-image">
   <img src="images/posts/hazardmethods/fig16.png" alt="Water Crowding Index – Annual water availability per capita by water province"/>
-</div>
-
-<div class="c-box-image">
   <img src="images/posts/hazardmethods/fig17.png" alt="Water Crowding Index – Annual water availability per capita by ADM2 Unit"/>
 </div>
 
@@ -183,8 +177,7 @@ The classification of hazard at ADM2 Units based on a global probabilistic WBGT 
 
 ## Earthquake Hazard Levels
 <div class="c-box"><span class="box-title"><b>Classification Summary:</b></span>
-  <p>
-Earthquake hazard is classified using peak ground acceleration (PGA, representing ground shaking), provided as frequency-severity data in raster format. The methodology follows that described in section 2.4.
+  <p>Earthquake hazard is classified using peak ground acceleration (PGA, representing ground shaking), provided as frequency-severity data in raster format. The methodology follows that described in section 2.4.
 The damaging intensity threshold is 0.2 g for high hazard and 0.1 g for medium and low hazard, using frequency thresholds of 100-250 years, 475-500 years, and 1000-2500 years for high, medium and low hazard, respectively.</p>
 </div>
 
@@ -232,9 +225,9 @@ If 100-year return period data are not available, 250 years is an acceptable val
 It is decided that a threshold of 0.5 m should be used for low hazard, as it represents a height at which land and buildings are flooded, and which allows for some uncertainty in offshore values of tsunami translated to potential onshore impacts. A value of 1.0 m for medium hazard is proposed to distinguish areas of known hazard e.g., Eastern Mediterranean Sea from areas of lower hazard (e.g., Western Africa). High hazard is classified using a higher threshold of 2.0 m, which corresponds to the depth at which building damage ratio increases significantly, based on post-disaster surveys in Japan, 2011 (MLIT, 2012). 
 GFDRR commissioned analysis by the Norwegian Geotechnical Institute, Geoscience Australia, and INGV Italy (under the umbrella of the Global Tsunami Model) to make data developed by Davies et al. (2017) openly available at several return periods. The dataset provides run-up values calculated at offshore hazard points, which have been projected to the shoreline by simple interpolation (described in the NGI report, in ThinkHazard! Methodology Google Drive folder). These coastal values have been rasterized at 0.01-degree resolution (c. 1km at the equator) for import to GeoNode and Thinkhazard!.
 
-<div class="c-box-image"><img src="images/posts/hazardmethods/fig23.png" alt="Tsunami maximum inundation height data at offshore points (output of Davies et al., 2017), for Sulawesi, Indonesia"/>
-</div>
-<div class="c-box-image"><img src="images/posts/hazardmethods/fig24.png" alt="Tsunami maximum inundation height data at the coast, interpolated from the points offshore Sulawesi, Indonesia"/>
+<div class="c-box-image">
+    <img src="images/posts/hazardmethods/fig23.png" alt="Tsunami maximum inundation height data at offshore points (output of Davies et al., 2017), for Sulawesi, Indonesia"/>
+    <img src="images/posts/hazardmethods/fig24.png" alt="Tsunami maximum inundation height data at the coast, interpolated from the points offshore Sulawesi, Indonesia"/>
 </div>
 
 An alternative pre-processing approach can be used to better define potential areas of onshore inundation, which identify low-lying areas where tsunami may inundate far inland. This can lead to non-coastal ADM2 units being assigned a hazard level, which would otherwise not be identified in the global data. This approach relies on SRTM elevation data, which are not available for the entire domain of global tsunami data, therefore use of this approach is limited to national or regional data. 
