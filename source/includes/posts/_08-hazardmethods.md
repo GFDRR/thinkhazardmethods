@@ -29,9 +29,9 @@ The following frequency classes are used in ThinkHazard! version 2:
 <li>medium: 50-year return period
 <li>low: 1000-year return period</ul>
     
-<br>
-Example of rationale justifying the choice of return periods, for river flood hazard
+<center>Example of rationale justifying the choice of return periods, for river flood hazard</center>
 <table><tr><td><b>Name</b></td><td><b>Return period</b></td><td><b>Rationale</b></td></tr>
+
 <tr><td>High</td><td>10 years</td><td>In many cases a River Flood event of once per year or once every five years already causes considerable damage. NOTE: This return period may not be available in all flood hazard assessments. Therefore, it is proposed to allow ThinkHazard! to use 25 years as an alternative.</td></tr>
 <tr><td>Medium</td><td>50 years</td><td>An event that would, on average, be expected to occur once or twice in a lifetime.</td></tr>
 <tr><td>Low</td><td>10,000 years</td><td>An event most people will not experience and will only be remembered by previous generations. 
@@ -161,8 +161,8 @@ A specific temperature threshold is defined for each hazard level, at the 5, 20,
 Extreme Heat hazard is classified based on an existing and widely accepted heat stress indicator, the Wet Bulb Globe Temperature (WBGT, in °C) – more specifically the daily maximum WGBT. The WBGT has an obvious relevance for human health, but it is relevant in all kinds of projects and sectors, including infrastructure related, as heat stress affects personnel and stakeholders, and therefore the design of buildings and infrastructure. In general, the WBGT is a relevant enough proxy to quantify the strain on physical infrastructure (energy, water, transport), such as increased demands for water and electricity, which may also affect decisions related to infrastructure.
 
 ### Intensity
-Heat stress studies in the scientific literature that make use of the WBGT apply thresholds of 28°C and 32°C to categorise heat stress risk. The damaging intensity thresholds are applied folling this definition of slight/low (<28°C), moderate/high (28-32°C) and severe/very high (>32°C) heat stress:
-<lu><li>high: >32°C
+Heat stress studies in the scientific literature that make use of the WBGT apply thresholds of 28°C and 32°C to categorise heat stress risk. The damaging intensity thresholds are applied folling this definition of slight/low (<28°C), moderate/high (28-32°C) and severe/very high (> 32°C) heat stress:
+<ul><li>high: >32°C
     <li>medium: >28°C
     <li>low: >25°C
     <li>very low: <25°C</ul>
@@ -207,7 +207,7 @@ Illustration of probability of damages for vulnerable buildings according to the
 Hazard dataset provide seismic hazard different for PGA. To enable those datasets to be included in ThinkHazard!, several units are accepted in the processing algorithm, which can read PGA in terms of a decimal or percentage value of Gravity (g), or PGA in terms of SI units (e.g., gal or cm/s2) (see Table 6).
 
 Conversion table for units of earthquake data
-<table><tr><td>Paramete unit</td><td colspan=2><table><tr><td colspan=2>Thresholds</td></tr>
+<table><tr><td>Parameter unit</td><td colspan=2><table><tr><td colspan=2>Thresholds</td></tr>
     <tr><td>High</td><td>Medium and Low</td></tr></table></td></tr>
 <tr><td>PGA-g</td><td>0.2</td><td>0.1</td></tr>
 <tr><td>PGA-g-per</td><td>20</td><td>10</td></tr>
@@ -293,9 +293,10 @@ The procedure is applied as follows:
         <li>If VEI<3, then hazard level is low</ul>
 <li>If the VEI index value is not available, hazard level is associated according to the date of last known eruption:
     <ul><li>If it was recorded an eruption in the last 2000 years (CE), then hazard level is high,
-    <liIf it was recorded an eruption in the Holocene (last 10000 years), then hazard level is medium
+    <li>If it was recorded an eruption in the Holocene (last 10000 years), then hazard level is medium
     <li>If it was recorded an eruption in more ancient times, then hazard level is low
-    <li>If no eruption of the volcano has been reported, then hazard level is low</ul>
+    <li>If no eruption of the volcano has been reported, then hazard level is very low</ul>
+</ul>
         
 To account for the fact that damage from a volcano does not occur only at the vent, but several tens of kilometers around the vent, the hazard level of each volcano is applied to a circular area around the volcano coordinate location.
 The maximum extent of proximal hazards is approximately 100 kilometers from a volcanic vent. This distance does not account for topographic influences that constrain the flow of lahars and lava. The resulting raster map of hazard levels provides a crude assessment of proximal volcanic hazard (excluding impacts of ash and gas), see Figure 27. This map is uploaded to the ThinkHazard! database. The tool then associates the hazard level to administrative units following the normal procedure: intersection with administrative polygons and maximum of hazard level on a given unit.
