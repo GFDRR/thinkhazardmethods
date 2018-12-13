@@ -161,7 +161,7 @@ Extreme Heat hazard is classified based on an existing and widely accepted heat 
 
 ### Intensity
 Heat stress studies in the scientific literature that make use of the WBGT apply thresholds of 28°C and 32°C to categorise heat stress risk. The damaging intensity thresholds are applied folling this definition of slight/low (<28°C), moderate/high (28-32°C) and severe/very high (> 32°C) heat stress:
-<lu><li>high: >32°C
+<ul><li>high: >32°C
     <li>medium: >28°C
     <li>low: >25°C
     <li>very low: <25°C</ul>
