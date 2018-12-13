@@ -160,7 +160,7 @@ A specific temperature threshold is defined for each hazard level, at the 5, 20,
 Extreme Heat hazard is classified based on an existing and widely accepted heat stress indicator, the Wet Bulb Globe Temperature (WBGT, in °C) – more specifically the daily maximum WGBT. The WBGT has an obvious relevance for human health, but it is relevant in all kinds of projects and sectors, including infrastructure related, as heat stress affects personnel and stakeholders, and therefore the design of buildings and infrastructure. In general, the WBGT is a relevant enough proxy to quantify the strain on physical infrastructure (energy, water, transport), such as increased demands for water and electricity, which may also affect decisions related to infrastructure.
 
 ### Intensity
-Heat stress studies in the scientific literature that make use of the WBGT apply thresholds of 28°C and 32°C to categorise heat stress risk. The damaging intensity thresholds are applied folling this definition of slight/low (<28°C), moderate/high (28-32°C) and severe/very high (>32°C) heat stress:
+Heat stress studies in the scientific literature that make use of the WBGT apply thresholds of 28°C and 32°C to categorise heat stress risk. The damaging intensity thresholds are applied folling this definition of slight/low (<28°C), moderate/high (28-32°C) and severe/very high (> 32°C) heat stress:
 <lu><li>high: >32°C
     <li>medium: >28°C
     <li>low: >25°C
@@ -292,9 +292,9 @@ The procedure is applied as follows:
         <li>If VEI<3, then hazard level is low</ul>
 <li>If the VEI index value is not available, hazard level is associated according to the date of last known eruption:
     <ul><li>If it was recorded an eruption in the last 2000 years (CE), then hazard level is high,
-    <liIf it was recorded an eruption in the Holocene (last 10000 years), then hazard level is medium
+    <li>If it was recorded an eruption in the Holocene (last 10000 years), then hazard level is medium
     <li>If it was recorded an eruption in more ancient times, then hazard level is low
-    <li>If no eruption of the volcano has been reported, then hazard level is low</ul>
+    <li>If no eruption of the volcano has been reported, then hazard level is very low</ul>
 </ul>
         
 To account for the fact that damage from a volcano does not occur only at the vent, but several tens of kilometers around the vent, the hazard level of each volcano is applied to a circular area around the volcano coordinate location.
