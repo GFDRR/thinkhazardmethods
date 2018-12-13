@@ -260,12 +260,10 @@ Tsunami hazard data do not have de facto standard frequencies. However, given ts
 
 ### Results of classification
 The classification of global data results in the following distribution of hazard levels:
-
-<div class="c-box-image"><img src="images/posts/hazardmethods/fig25.png" alt="Global tsunami hazard levels at ADM1"/>
+<div class="c-box-image">
+    <img src="images/posts/hazardmethods/fig25.png" alt="Global tsunami hazard levels at ADM1"/>
+    <img src="images/posts/hazardmethods/fig26.png" alt="Global tsunami hazard levels at ADM2"/>
 </div>
-<div class="c-box-image"><img src="images/posts/hazardmethods/fig26.png" alt="Global tsunami hazard levels at ADM2"/>
-</div>
-<br>
 
 ## Volcanic Hazard Levels
 <div class="c-box"><span class="box-title"><b>Classification Summary:</b></span>
