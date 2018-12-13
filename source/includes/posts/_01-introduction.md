@@ -38,3 +38,10 @@ New versions can be developed using the open-source code as a basis, by includin
 
 ## How to Use this Guide
 This guide describes the hazard levels shown in ThinkHazard!, and how the raw hazard data is classified into hazard levels. A general section describes the use of global and local data, and how the tool uses multiple sources of hazard data for the same area. It then presents sections showing the classification of data for each hazard in turn, because the method varies from hazard to hazard.
+
+##Quick Links:
+To download data layers used in ThinkHazard! Via the GeoNode API, use:
+https://www.geonode-gfdrrlab.org/api/layers/
+CTRL+F "layer_name"
+And access the layer using https://www.geonode-gfdrrlab.org/uploaded/layers/layer_name.tif
+
