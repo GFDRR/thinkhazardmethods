@@ -11,13 +11,13 @@ Eartquake
     </div></td>
     <td>Description of hazard</td></tr>
 
-<tr><td>Tsunami
+<tr><td width="200" align=center>Tsunami
 <div class="c-box-image">
 <img src="images/posts/ts.png">
 </div></td>
     <td></td></tr>
 
-<tr><td>Volcano
+<tr><td width="200" align=center>Volcano
 <div class="c-box-image">
 <img src="images/posts/va.png">
 </div></td>
@@ -33,13 +33,13 @@ Flood (pluvial and fluvial)
 </div></td>
     <td></td></tr>
 
-<tr><td>Landslide
+<tr><td width="200" align=center>Landslide
 <div class="c-box-image">
 <img src="images/posts/ls.png">
 </div></td>
     <td></td></tr>
 
-<tr><td>Storm surge
+<tr><td width="200" align=center>Storm surge
 <div class="c-box-image">
 <img src="images/posts/ss.png">
 </div></td>
@@ -55,19 +55,19 @@ Cyclonic Strong Winds
 </div></td>
     <td></td></tr>
 
-<tr><td>Water scarcity
+<tr><td width="200" align=center>Water scarcity
 <div class="c-box-image">
 <img src="images/posts/ws.png">
 </div></td>
     <td></td></tr>
 
-<tr><td>Extreme Temperatures
+<tr><td width="200" align=center>Extreme Temperatures
 <div class="c-box-image">
 <img src="images/posts/et.png">
 </div></td>
     <td></td></tr>
 
-<tr><td>Wildfire
+<tr><td width="200" align=center>Wildfire
 <div class="c-box-image">
 <img src="images/posts/wf.png">
 </div></td>
