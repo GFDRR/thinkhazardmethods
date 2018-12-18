@@ -8,20 +8,20 @@ These processes originates from within the Earth. They do not depend on climate 
 Eartquake
 <div class="c-box-image">
 <img src="images/posts/eq.png">
-    </div></td>
-    <td>Description of hazard</td></tr>
+</div></td>
+<td>Description of hazard</td></tr>
 
 <tr><td width="200" align=center>Tsunami
 <div class="c-box-image">
 <img src="images/posts/ts.png">
 </div></td>
-    <td></td></tr>
+<td>Description of hazard</td></tr>
 
 <tr><td width="200" align=center>Volcano
 <div class="c-box-image">
 <img src="images/posts/va.png">
 </div></td>
-    <td></td></tr></table>
+<td>Description of hazard</td></tr></table>
 
 ## HYDRAULIC HAZARDS
 A hazard caused by the occurrence, movement, and distribution of surface and subsurface freshwater and saltwater. These hazards are tied to the water cycle, and thus can be affected by human activities and meteoclimatic processes.
@@ -31,19 +31,19 @@ Flood (pluvial and fluvial)
 <div class="c-box-image">
 <img src="images/posts/fl.png">
 </div></td>
-    <td></td></tr>
+<td>Description of hazard</td></tr>
 
 <tr><td width="200" align=center>Landslide
 <div class="c-box-image">
 <img src="images/posts/ls.png">
 </div></td>
-    <td></td></tr>
+<td>Description of hazard</td></tr>
 
 <tr><td width="200" align=center>Storm surge
 <div class="c-box-image">
 <img src="images/posts/ss.png">
 </div></td>
-    <td></td></tr></table>
+<td>Description of hazard</td></tr></table>
 
 ## METEO-CLIMATOLOGICAL HAZARDS
 A hazard caused by extreme weather and atmospheric conditions. Meteorological hazards range from hours to days, and influence the micro- to meso- scale. Climatological hazards are meso- to macro-scale processes ranging from intra-seasonal to multi-decadal climate variability.
@@ -53,22 +53,22 @@ Cyclonic Strong Winds
 <div class="c-box-image">
 <img src="images/posts/sw.png">
 </div></td>
-    <td></td></tr>
+<td>Description of hazard</td></tr>
 
 <tr><td width="200" align=center>Water scarcity
 <div class="c-box-image">
 <img src="images/posts/ws.png">
 </div></td>
-    <td></td></tr>
+<td>Description of hazard</td></tr>
 
 <tr><td width="200" align=center>Extreme Temperatures
 <div class="c-box-image">
 <img src="images/posts/et.png">
 </div></td>
-    <td></td></tr>
+<td>Description of hazard</td></tr>
 
 <tr><td width="200" align=center>Wildfire
 <div class="c-box-image">
 <img src="images/posts/wf.png">
 </div></td>
-    <td></td></tr></table>
+<td>Description of hazard</td></tr></table>
