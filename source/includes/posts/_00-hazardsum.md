@@ -1,7 +1,6 @@
 ThinkHazard! provides information about 10 hazard phenomena triggered by Earth geophysical, hydrologic and meteorologic processes.
 
 **GEOPHYSICAL HAZARDS
-
 These processes originates from within the Earth. They do not depend on climate variables and human actions, and typically the range of their return period spans over many centuries.
 
 <div class="c-box-image">
