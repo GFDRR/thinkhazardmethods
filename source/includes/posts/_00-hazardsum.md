@@ -4,58 +4,71 @@ ThinkHazard! provides information about 10 hazard phenomena triggered by Earth g
 ## GEOPHYSICAL HAZARDS
 These processes originates from within the Earth. They do not depend on climate variables and human actions, and typically the range of their return period spans over many centuries.
 
+<table><tr><td>
 Eartquake
 <div class="c-box-image">
 <img src="images/posts/eq.png">
-</div>
+    </div></td>
+    <td></td></tr>
 
-Tsunami
+<tr><td>Tsunami
 <div class="c-box-image">
 <img src="images/posts/ts.png">
-</div>
+</div></td>
+    <td></td></tr>
 
-Volcano
+<tr><td>Volcano
 <div class="c-box-image">
 <img src="images/posts/va.png">
-</div>
+</div></td>
+    <td></td></tr></table>
 
 ## HYDRAULIC HAZARDS
 A hazard caused by the occurrence, movement, and distribution of surface and subsurface freshwater and saltwater. These hazards are tied to the water cycle, and thus can be affected by human activities and meteoclimatic processes.
 
+<table><tr><td>
 Flood (pluvial and fluvial)
 <div class="c-box-image">
 <img src="images/posts/fl.png">
-</div>
+</div></td>
+    <td></td></tr>
 
-Landslide
+<tr><td>Landslide
 <div class="c-box-image">
 <img src="images/posts/ls.png">
-</div>
+</div></td>
+    <td></td></tr>
 
-Storm surge
+<tr><td>Storm surge
 <div class="c-box-image">
 <img src="images/posts/ss.png">
-</div>
+</div></td>
+    <td></td></tr></table>
 
 ## METEO-CLIMATOLOGICAL HAZARDS
 A hazard caused by extreme weather and atmospheric conditions. Meteorological hazards range from hours to days, and influence the micro- to meso- scale. Climatological hazards are meso- to macro-scale processes ranging from intra-seasonal to multi-decadal climate variability.
 
+<table><tr><td>
 Cyclonic Strong Winds
 <div class="c-box-image">
 <img src="images/posts/sw.png">
-</div>
+</div></td>
+    <td></td></tr>
 
-Water scarcity
+<tr><td>Water scarcity
 <div class="c-box-image">
 <img src="images/posts/ws.png">
-</div>
+</div></td>
+    <td></td></tr>
 
-Extreme Temperatures
+<tr><td>Extreme Temperatures
 <div class="c-box-image">
 <img src="images/posts/et.png">
-</div>
+</div></td>
+    <td></td></tr>
 
-Wildfire
+<tr><td>Wildfire
 <div class="c-box-image">
 <img src="images/posts/wf.png">
-</div>
+</div></td>
+    <td></td></tr></table>
