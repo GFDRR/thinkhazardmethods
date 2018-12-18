@@ -1,7 +1,7 @@
+# HAZARD CATEGORIES
 ThinkHazard! provides information about 10 hazard phenomena triggered by Earth geophysical, hydrologic and meteorologic processes.
 
-**GEOPHYSICAL HAZARDS
-
+## GEOPHYSICAL HAZARDS
 These processes originates from within the Earth. They do not depend on climate variables and human actions, and typically the range of their return period spans over many centuries.
 
 <div class="c-box-image">
@@ -17,8 +17,7 @@ Eartquake
 <img src="images/posts/va.png">
 </div>Volcano
 
-**HYDRAULIC HAZARDS
-
+## HYDRAULIC HAZARDS
 A hazard caused by the occurrence, movement, and distribution of surface and subsurface freshwater and saltwater. These hazards are tied to the water cycle, and thus can be affected by human activities and meteoclimatic processes.
 
 <div class="c-box-image">
@@ -33,8 +32,7 @@ A hazard caused by the occurrence, movement, and distribution of surface and sub
 <img src="images/posts/ss.png"/>
 </div>Storm surge
 
-**METEO-CLIMATOLOGICAL HAZARDS
-
+## METEO-CLIMATOLOGICAL HAZARDS
 A hazard caused by extreme weather and atmospheric conditions. Meteorological hazards range from hours to days, and influence the micro- to meso- scale. Climatological hazards are meso- to macro-scale processes ranging from intra-seasonal to multi-decadal climate variability.
 
 <div class="c-box-image">
