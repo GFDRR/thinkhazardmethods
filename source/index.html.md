@@ -6,6 +6,7 @@ toc_footers:
   - <a href="download/thinkhazard-methodology-report_v2_0.pdf" download="thinkhazard-methodology-report_v2_0.pdf" class="btn -black">Download PDF guide</a>.
 
 includes:
+  - posts/_00-hazardsum
   - posts/_01-introduction
   - posts/_02-hazarddata
   - posts/_04-drrguidance
