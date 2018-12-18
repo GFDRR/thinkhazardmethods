@@ -4,7 +4,7 @@ ThinkHazard! provides information about 10 hazard phenomena triggered by Earth g
 ## GEOPHYSICAL HAZARDS
 These processes originates from within the Earth. They do not depend on climate variables and human actions, and typically the range of their return period spans over many centuries.
 
-<table><tr><td width="300">
+<table><tr><td width="200" align=center>
 Eartquake
 <div class="c-box-image">
 <img src="images/posts/eq.png">
@@ -26,7 +26,7 @@ Eartquake
 ## HYDRAULIC HAZARDS
 A hazard caused by the occurrence, movement, and distribution of surface and subsurface freshwater and saltwater. These hazards are tied to the water cycle, and thus can be affected by human activities and meteoclimatic processes.
 
-<table><tr><td>
+<table><tr><td width="200" align=center>
 Flood (pluvial and fluvial)
 <div class="c-box-image">
 <img src="images/posts/fl.png">
@@ -48,7 +48,7 @@ Flood (pluvial and fluvial)
 ## METEO-CLIMATOLOGICAL HAZARDS
 A hazard caused by extreme weather and atmospheric conditions. Meteorological hazards range from hours to days, and influence the micro- to meso- scale. Climatological hazards are meso- to macro-scale processes ranging from intra-seasonal to multi-decadal climate variability.
 
-<table><tr><td>
+<table><tr><td width="200" align=center>
 Cyclonic Strong Winds
 <div class="c-box-image">
 <img src="images/posts/sw.png">
