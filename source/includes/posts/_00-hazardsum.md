@@ -5,7 +5,7 @@ ThinkHazard! provides information about 10 hazard phenomena triggered by Earth g
 These processes originates from within the Earth. They are not much influenced by climate variables or human actions, and typically the range of their return period spans over many centuries.
 
 <table><tr><td width="200" align=center>
-Eartquake
+Earthquake
 <div class="c-box-image">
 <img src="images/posts/eq.png">
 </div></td>
