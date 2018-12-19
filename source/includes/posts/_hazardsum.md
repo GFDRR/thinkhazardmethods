@@ -36,13 +36,19 @@ Flood (pluvial and fluvial)
 <div class="c-box-image">
 <img src="images/posts/fl.png">
 </div></td>
-<td>Description of hazard</td></tr>
+<td>Flood hazard includes two similar phenomena:
+- Fluvial (or riverine) flood occuring when excessive rainfall over an extended period of time causes a river to exceed its capacity, triggering the overflow or breaching of river embankments and ultimately causing the submersion of natural and human soil. Fluvial floods can also be caused by heavy snow melt and ice jams.
+- Pluvial (or flash) flooding characterized by an intense, fast flow of water occuring within an existing river channel with little to no notice. Flash floods are very dangerous and destructive not only because of the force of the water, but also the hurtling debris that is often swept up in the flow.
+    
+- Pluvial (or surface water) flood caused by heavy rainfall creates a flood event independent of an overflowing water body. One of the most common misconceptions about flood risk is that one must be located near a body of water to be at risk. Pluvial flooding debunks that myth, as it can happen in any urban area — even higher elevation areas that lie above coastal and river floodplains. There are two common types of pluvial flooding: Intense rain saturates an urban drainage system. The system becomes overwhelmed and water flows out into streets and nearby structures. Run-off or flowing water from rain falling on hillsides that are unable to absorb the water. Hillsides with recent forest fires are notorious sources of pluvial floods, as are suburban communities on hillsides.
+
+</td></tr>
 
 <tr><td width="200" align=center>Landslide
 <div class="c-box-image">
 <img src="images/posts/ls.png">
 </div></td>
-<td>Description of hazard</td></tr>
+<td>A landslide is the movement of natural soil and rocks controlled by gravity. Landslides can involve dry mass or wet mass. Dry mass movements can be triggered by violent geophysical hazards such as earthquakes and volcanic eruptions, but they can also be a consequence of water scarcity and soil erosion. Diffeerently, wet mass movements (mudslides) are more often caused by heavy precipitation or ice melting. Landslides are associated with other hazards such as floods, tropical cyclones, and severe local storms.</td></tr>
 
 <tr><td width="200" align=center>Storm surge
 <div class="c-box-image">
