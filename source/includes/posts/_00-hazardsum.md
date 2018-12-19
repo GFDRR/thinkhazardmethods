@@ -8,10 +8,10 @@ The ThinkHazard! project was initiated in 2015 to facilitate greater access to h
 
 ThinkHazard! is developed and maintained by the Global Facility for Disaster Reduction and Recovery <a href="http://gfdrr.org" target="_blank">(GFDRR)</a>.
 
-# HAZARD TYPES
+# Hazard types
 ThinkHazard! provides information about 10 hazard phenomena triggered by Earth geophysical, hydrologic and meteorologic processes.
 
-## GEOPHYSICAL HAZARDS
+## Geophysical hazards
 These processes originates from within the Earth. They are not much influenced by climate variables or human actions, and typically the range of their return period spans over many centuries.
 
 <table><tr><td width="200" align=center>
@@ -33,7 +33,7 @@ These processes originates from within the Earth. They are not much influenced b
 <td>Volcanic eruptions happen when lava, gas and ashes are discharged from a volcanic vent. This can trigger different type of hazards to life and property, including lava flows, lahars, ash falls, debris avalanches, and pyroclastic density currents. <b>Ash plumes</b> originated from volcanic eruptions can spread on large areas, causing disruption of air traffic.
 </td></tr></table>
 
-## HYDRAULIC HAZARDS
+## Hydraulic hazards
 A hazard caused by the occurrence, movement, and distribution of surface and subsurface freshwater and saltwater. These hazards are tied to the water cycle, and thus can be affected by human activities and meteoclimatic processes.
 
 <table><tr><td width="200" align=center>
@@ -56,7 +56,7 @@ A hazard caused by the occurrence, movement, and distribution of surface and sub
 </div></td>
 <td>A tidal wave/storm surge is the rise of the water level in a water body (the sea, an estuary or lake) as result of strong wind driving water towards the coast. This so-called wind setup is superimposed on the normal astronomical tide. The mean high water level can be exceeded by five and more metres, triggering coastal flooding. Storm surges are associated with <b>tropical cyclones, strong winds, and tsunamis</b>.</td></tr></table>
 
-## METEO-CLIMATOLOGICAL HAZARDS
+## Meteo-Climatological hazards
 A hazard caused by extreme weather and atmospheric conditions. Meteorological hazards range from hours to days, and influence the micro- to meso- scale. Climatological hazards are meso- to macro-scale processes ranging from intra-seasonal to multi-decadal climate variability. Human-induced global worming has a strong effect on the frequency and magnitude of such hazards.
 
 <table><tr><td width="200" align=center>
