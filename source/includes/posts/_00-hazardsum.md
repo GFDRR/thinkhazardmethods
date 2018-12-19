@@ -1,3 +1,7 @@
+<div class="c-box-image">
+  <img src="images/posts/introduction/ThinkHazard.png" alt="ThinkHazard" width="511" height="154"/>
+</div>
+
 # HAZARD CATEGORIES
 ThinkHazard! provides information about 10 hazard phenomena triggered by Earth geophysical, hydrologic and meteorologic processes.
 
