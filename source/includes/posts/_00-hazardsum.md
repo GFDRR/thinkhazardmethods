@@ -40,7 +40,7 @@ A hazard caused by the occurrence, movement, and distribution of surface and sub
 <div class="c-box-image"><b>Flood (pluvial and fluvial)</b><br>
 <img src="images/posts/fl.png">
 </div></td>
-<td>Flood hazard includes two similar phenomena:
+<td>Flood hazard includes two similar phenomena:<br>
 <b>Fluvial (or riverine) floods</b> occur when intense precipitation over an extended period of time causes a river to exceed its capacity, triggering the overflow or breaching of river embankments and ultimately causing the submersion of natural and human soil in the floodplains. Fluvial floods can also happen due to heavy snow melt and ice jams. Floods onset time and intensity can vary greatly due to geomorphological and climatic conditions, from very slow to extremely fast and intense (flash floods).
 <br><b>Pluvial (or surface water) floods</b> are also a consequence of heavy rainfall, but they happen outside of a water body, such in an urban area. Pluvial floods can be triggered by the saturation of the urban drainage system, causing water to flow out into the streets; or they can happen due to the fast rainfall run-off from hillsides areas when degraded soil and lack of natural vegetation reduce the absorbing capacity of soil. Hillsides hit by <b>wildfires</b>, for example, can be sources of pluvial floods.</td></tr>
 
