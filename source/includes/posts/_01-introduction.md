@@ -1,16 +1,14 @@
-## Objective of ThinkHazard! 
+# Abouth ThinkHazard!
+## Objectives
 Interpretation of hazard information to determine potential impact and, in turn, implement robust a risk management strategy requires knowledge of often highly technical data. Additionally, hazard data is generated in many different formats from many organizations. If the data is made available publicly at all, it is via a growing number of online sources and data portals. So, the task to find hazard data sets, decide which data set to use for a given purpose, and then interpret the data can require an increasing amount of time and prior knowledge. 
 
 DRM projects have too often been executed without full appreciation of the range of hazards and level of each hazard that exist in a project area. This can result in underestimation of disaster risk and development of a project that is potentially not robust enough to withstand the impacts of one or more hazards that could affect the project in the future. Access to, and appropriate use of hazard and risk information remains a barrier to mainstreaming DRM into development projects.  
 ThinkHazard! is an analytical tool dedicated to improving knowledge and understanding of natural hazards. It was envisioned that the ThinkHazard! primary user would be development sector professionals, who need to gather hazard information while planning projects. However, the benefits of ThinkHazard! stretch beyond the development sector, into general education about global distribution of multiple hazards and how to manage them. 
 
 To achieve its objectives, the online user interface has a simple structure and workflow, comprising, 1) a location search function, 2) an overview of hazard level for 11 hazards for a selected location, and 3) a hazard-specific screen that presents risk management guidance, relevant contact information and further information in the form of useful websites and reports for that hazard and location. 
-
 <div class="c-box-image">
   <img src="images/posts/introduction/thscreens.png" alt="The three page levels of thinkhazard.org. From left: homepage location search, location overview of all hazards, single hazard level and risk reduction recommendations"/>
 </div>
-
-
 <div class="c-box">
   <span class="box-title"><b>Getting Started</b></span>
   <p>ThinkHazard! can be accessed at: <a href="http://thinkhazard.org" target="_blank">www.thinkhazard.org</a>. Begin typing your location of interest (country name, region or district) and select the correct location from the drop-down. Hit enter, and you will be taken to the overview of hazards for that location. From there, you can view more detail on any of the hazards (including guidance on reducing risk, useful resources and contacts), and you can navigate to more specific and neighboring locations using the map.</p>
