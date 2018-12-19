@@ -1,11 +1,3 @@
-# Introduction
-
-Hazard information is a critical input to disaster risk management, building resilience of urban areas, infrastructure and communities. The Open Access to Risk Information area of engagement aims to make high-quality risk information available faster and at lower costs, and develop new tools that allow decision-makers and communities to collect, share, and understand risk information. 
-
-The ThinkHazard! project was initiated in 2015 to facilitate greater access to hazard information and risk management guidance for development sector professionals. The open access thinkhazard.org website enables users to screen potential project locations for the existence of multiple natural hazards, then to obtain guidance on how to manage the risks to their project, and any impacts of their project on the local hazard. Version 1 of ThinkHazard! was used over 140,000 times in 200 countries, and has been adopted into World Bank Operations Portal for core use in project planning. This report has been updated to reflect new hazards and revisions in methodology, made in the development of ThinkHazard! version 2, released in July 2017.
-
-ThinkHazard! is developed and maintained by the Global Facility for Disaster Reduction and Recovery <a href="http://gfdrr.org" target="_blank">(GFDRR)</a>.
- 
 ## Objective of ThinkHazard! 
 Interpretation of hazard information to determine potential impact and, in turn, implement robust a risk management strategy requires knowledge of often highly technical data. Additionally, hazard data is generated in many different formats from many organizations. If the data is made available publicly at all, it is via a growing number of online sources and data portals. So, the task to find hazard data sets, decide which data set to use for a given purpose, and then interpret the data can require an increasing amount of time and prior knowledge. 
 
