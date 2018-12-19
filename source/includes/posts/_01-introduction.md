@@ -1,7 +1,3 @@
-<div class="c-box-image">
-  <img src="images/posts/introduction/ThinkHazard.png" alt="ThinkHazard" width="511" height="154"/>
-</div>
-
 # Introduction
 
 Hazard information is a critical input to disaster risk management, building resilience of urban areas, infrastructure and communities. The Open Access to Risk Information area of engagement aims to make high-quality risk information available faster and at lower costs, and develop new tools that allow decision-makers and communities to collect, share, and understand risk information. 
