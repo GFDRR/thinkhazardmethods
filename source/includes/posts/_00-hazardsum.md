@@ -37,7 +37,7 @@ These processes originates from within the Earth. They are not much influenced b
 A hazard caused by the occurrence, movement, and distribution of surface and subsurface freshwater and saltwater. These hazards are tied to the water cycle, and thus can be affected by human activities and meteoclimatic processes.
 
 <table><tr><td width="200" align=center>
-<div class="c-box-image"><center><b>Flood (pluvial and fluvial)</b><br>
+<div class="c-box-image"><center><b>Flood<br>(pluvial and fluvial)</b><br>
 <img src="images/posts/fl.png">
 </div></td>
 <td>Flood hazard includes two similar phenomena:<br>
