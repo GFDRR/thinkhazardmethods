@@ -1,4 +1,4 @@
-# Abouth ThinkHazard!
+# About ThinkHazard!
 ## Objectives
 Interpretation of hazard information to determine potential impact and, in turn, implement robust a risk management strategy requires knowledge of often highly technical data. Additionally, hazard data is generated in many different formats from many organizations. If the data is made available publicly at all, it is via a growing number of online sources and data portals. So, the task to find hazard data sets, decide which data set to use for a given purpose, and then interpret the data can require an increasing amount of time and prior knowledge. 
 
