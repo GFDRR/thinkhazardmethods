@@ -426,7 +426,9 @@ html, body {
     }
 
     td {
-      padding: 10px;
+      text-align: center;
+      vertical-align: middle;
+      padding:2px 10px 2px 10px;
     }
 
     tr:last-child {
