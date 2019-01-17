@@ -413,36 +413,30 @@ html, body {
   table {
     margin-bottom: 1em;
     overflow: auto;
-    th,td {
-      text-align: left;
-      vertical-align: top;
-      line-height: 1.6;
     }
 
-    th {
-      padding: 5px 10px;
-      border-bottom: 1px solid #ccc;
-      vertical-align: bottom;
-    }
-
-    td {
+  th,td {
       text-align: center;
       vertical-align: middle;
       padding:2px 10px 2px 10px;
     }
-
-    tr:last-child {
+  
+  th {
+      padding: 5px 10px;
       border-bottom: 1px solid #ccc;
     }
 
-    tr:nth-child(odd)>td {
+  tr:last-child {
+      border-bottom: 1px solid #ccc;
+    }
+
+  tr:nth-child(odd)>td {
       background-color: lighten($main-bg,4.2%);
     }
 
-    tr:nth-child(even)>td {
+  tr:nth-child(even)>td {
       background-color: lighten($main-bg,2.4%);
     }
-  }
 
   dt {
     font-weight: bold;
