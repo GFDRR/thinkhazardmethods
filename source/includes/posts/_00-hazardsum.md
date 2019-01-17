@@ -2,11 +2,11 @@
   <img src="images/posts/introduction/ThinkHazard.png" alt="ThinkHazard" width="511" height="154"/>
 </div>
 
-Hazard information is a critical input to disaster risk management, building resilience of urban areas, infrastructure and communities. The Open Access to Risk Information area of engagement aims to make high-quality risk information available faster and at lower costs, and develop new tools that allow decision-makers and communities to collect, share, and understand risk information. 
-
-The ThinkHazard! project was initiated in 2015 to facilitate greater access to hazard information and risk management guidance for development sector professionals. The open access thinkhazard.org website enables users to screen potential project locations for the existence of multiple natural hazards, then to obtain guidance on how to manage the risks to their project, and any impacts of their project on the local hazard. Version 1 of ThinkHazard! was used over 140,000 times in 200 countries, and has been adopted into World Bank Operations Portal for core use in project planning. This report has been updated to reflect new hazards and revisions in methodology, made in the development of ThinkHazard! version 2, released in July 2017.
-
+Hazard information is a critical input to disaster risk management. ThinkHazard! project started in 2015 to facilitate open access to risk information. It allows decision-makers, development professionals and communities to collect, share, and understand hazard information and risk management guidance. ThinkHazard! enables users to screen potential project locations for the existence of multiple natural hazards, and then to obtain guidance on how to manage the risks within their project.
 ThinkHazard! is developed and maintained by the Global Facility for Disaster Reduction and Recovery <a href="http://gfdrr.org" target="_blank">(GFDRR)</a>.
+Version 1 of ThinkHazard! was used over 140,000 times in 200 countries, and has been adopted into World Bank Operations Portal for core use in project planning. This report has been updated to reflect new hazards and revisions in methodology, made in the development of ThinkHazard! version 2, released in July 2017. Version 3 is in currently under development.
+
+<center><a href="http://www.thinkhazard.org/en/faq">ThinkHazard FAQ</a></center>
 
 # Hazard types
 ThinkHazard! provides information about 10 hazard phenomena triggered by Earth geophysical, hydrologic and meteorologic processes.
@@ -51,13 +51,13 @@ A hazard caused by the occurrence, movement, and distribution of surface and sub
 <td>A landslide is the movement of natural soil and rocks controlled by gravity. Landslides can involve dry mass or wet mass. Dry mass movements can be triggered by violent geophysical hazards such as earthquakes and volcanic eruptions, but they can also be a consequence of water scarcity and soil erosion. Diffeerently, wet mass movements (mudslides) are more often caused by heavy precipitation or ice melting. Landslides are associated with other hazards such as <b>floods, tropical cyclones, and severe local storms</b>.</td></tr>
 
 <tr><td width="200" align=center>
-<div class="c-box-image"><center><b>Storm surge</b><br>
+<div class="c-box-image"><center><b>Coastal flood</b><br>
 <img src="images/posts/ss.png">
 </div></td>
-<td>A tidal wave/storm surge is the rise of the water level in a water body (the sea, an estuary or lake) as result of strong wind driving water towards the coast. This so-called wind setup is superimposed on the normal astronomical tide. The mean high water level can be exceeded by five and more metres, triggering coastal flooding. Storm surges are associated with <b>tropical cyclones, strong winds, and tsunamis</b>.</td></tr></table>
+<td>Coastal floods can be triggered by violent storm surge events or happen due to extreme tidal events; both pheonomena are made more severe by sea leve rise. A tidal wave/storm surge is the rise of the water level in a water body (the sea, an estuary or lake) as result of strong wind driving water towards the coast. This so-called wind setup is superimposed on the normal astronomical tide. The mean high water level can be exceeded by five and more metres, triggering coastal flooding. Storm surges are associated with <b>tropical cyclones, strong winds, and tsunamis</b>.</td></tr></table>
 
 ## Meteo-Climatological hazards
-A hazard caused by extreme weather and atmospheric conditions. Meteorological hazards range from hours to days, and influence the micro- to meso- scale. Climatological hazards are meso- to macro-scale processes ranging from intra-seasonal to multi-decadal climate variability. Human-induced global worming has a strong effect on the frequency and magnitude of such hazards.
+A hazard caused by extreme weather and atmospheric conditions. Meteorological hazards range from hours to days, and influence the micro- to meso- scale. Climatological hazards are meso- to macro-scale processes ranging from intra-seasonal to multi-decadal climate variability. Human-induced global warming has a strong effect on the frequency and magnitude of such hazards.
 
 <table><tr><td width="200" align=center>
 <div class="c-box-image"><center><b>Cyclonic Strong Winds</b><br>
@@ -69,7 +69,7 @@ A hazard caused by extreme weather and atmospheric conditions. Meteorological ha
 <div class="c-box-image"><center><b>Water scarcity</b><br>
 <img src="images/posts/ws.png">
 </div></td>
-<td>Water scarcity, or drought, is defined as a deficiency of rainfall over an extended period – a season, a year or several years – relative to the statistical multi-year average for the region. Lack of rainfall leads to inadequate water supply for the environments and human activities. A drought may result in other natural hazards such as <b>wildfires, extreme temperatures</b>, desertification, famine and epidemics.</td></tr>
+<td>Water scarcity, or drought, is defined as a deficiency of rainfall over an extended period – a season, a year or several years – relative to the statistical multi-year average for the region. Lack of rainfall leads to inadequate water supply for the environments and human activities. A drought may trigger other natural hazards such as <b>wildfires, extreme temperatures</b>, desertification, famine and epidemics.</td></tr>
 
 <tr><td width="200" align=center>
 <div class="c-box-image"><center><b>Extreme temperatures</b><br>
