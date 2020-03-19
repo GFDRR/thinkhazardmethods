@@ -39,6 +39,11 @@ html, body {
   }
 }
 
+.img {
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(3px 3px 3px #222);
+  padding: 10px 0 10px 0;
+  }
 
 ////////////////////////////////////////////////////////////////////////////////
 // TABLE OF CONTENTS
@@ -415,17 +420,19 @@ html, body {
     overflow: auto;
     }
 
-  th,td {
-      text-align: center;
+  th, td {
       vertical-align: middle;
-      padding:2px 10px 2px 10px;
+      padding: 10px 10px 10px 10px;
     }
   
   th {
       padding: 5px 10px;
       border-bottom: 1px solid #ccc;
     }
-
+  .tdimg {
+      text-align: center;
+      width: 8em;
+    }
   tr:last-child {
       border-bottom: 1px solid #ccc;
     }
@@ -532,9 +539,8 @@ html, body {
 
     padding: 2em $main-padding;
     margin: 0;
-    width: $examples-width;
-
-    float:right;
+//  width: $examples-width;
+//  float:right;
     clear:right;
 
     box-sizing: border-box;
