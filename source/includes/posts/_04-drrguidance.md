@@ -14,22 +14,3 @@ The user interface includes a section providing further resources to the user. T
 
 ## Contact Information
 Contact information has been compiled for every country and hazard included in ThinkHazard!. This comprises organization name, website URL, telephone and email address, for up to three organizations per hazard and country. This list was last compiled in early 2017. It will be periodically reviewed and updated as new versions of ThinkHazard! are developed.
-
-## Other tool features
-### Downloadable hazard reports
-Hazard level information, map, risk recommendations, further resources and contact information for all hazards and a single location can be downloaded as a .pdf document. The ‘download pdf’ button is available on all overview and hazard pages. 
-
-### Languages
-ThinkHazard! is currently available in three languages: English, French and Spanish. All components of the tool are available in these languages, except for the feedback form (English only). The language toggle button is in the header of every page on the user interface. Translation has been conducted by World Bank translators, using Transifex.com.
-
-### Data map
-A global map of data coverage is provided via a link in the header bar. This show, for each hazard, the availability of different levels of hazard data. Clicking on a country provides a list of each available data set.
-<div class="c-box-image">
-  <img src="images/posts/guidance/datamap.png" alt="Global data map, showing the geographic level of data used in ThinkHazard, for each hazard and country"/>
-</div>
-
-### Extracting and re-using content
-The ThinkHazard! API enables extraction of hazard levels, recommendations, further information and contacts, into code for re-use in other tools. The API instructions are at thinkhazard/API.md (https://github.com/GFDRR/thinkhazard, master branch)
-
-### Licenses 
-ThinkHazard! is available under the GNU General Public Licence, Version 3, 29 June 2007. Text content is licensed under CC-BY-SA. Classified hazard levels are licensed under CC-BY. Original hazard data are licensed under their original terms, which are contained in the associated layer metadata.

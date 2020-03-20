@@ -129,3 +129,15 @@ There is a text description of what the hazard means for the user, in terms of t
   <img src="images/posts/hazarddata/hazlevThailandcy.png" alt="Hazard levels communicated via the single-hazard and risk reduction guidance page"/>
 </div>
 
+## Other tool features
+### Downloadable hazard reports
+Hazard level information, map, risk recommendations, further resources and contact information for all hazards and a single location can be downloaded as a .pdf document. The ‘download pdf’ button is available on all overview and hazard pages. 
+
+### Languages
+ThinkHazard! is currently available in three languages: English, French and Spanish. All components of the tool are available in these languages, except for the feedback form (English only). The language toggle button is in the header of every page on the user interface. Translation has been conducted by World Bank translators, using Transifex.com.
+
+### Data map
+A global map of data coverage is provided via a link in the header bar. This show, for each hazard, the availability of different levels of hazard data. Clicking on a country provides a list of each available data set.
+<div class="c-box-image">
+  <img src="images/posts/guidance/datamap.png" alt="Global data map, showing the geographic level of data used in ThinkHazard, for each hazard and country"/>
+</div>

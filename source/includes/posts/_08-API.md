@@ -1,11 +1,11 @@
 # API instructions
-
-Through API, third party applicatin can make use of the hazard classification stored in TH. Queries can be submitted to access all hazard information stored in the databse.
+### Extracting and re-using content
+The ThinkHazard! APIs enable the extraction of hazard levels, recommendations, further information and contacts, into json files for re-use in other tools. 
 
 ## Reference
+* DIvision codes: <a href="https://github.com/GFDRR/thinkhazardmethods/blob/master/source/download/ADM0_TH.csv" target="_blank">ADM0</a> <a href="https://github.com/GFDRR/thinkhazardmethods/blob/master/source/download/ADM1_TH.csv" target="_blank">ADM1</a> <a href="https://github.com/GFDRR/thinkhazardmethods/blob/master/source/download/ADM2_TH.csv" target="_blank">ADM2</a> 
 * Hazard type: EQ = EarthQuake; VO = Vocalno; TS = Tsunami; CY = Cyclones; FL = Floods; UF = Urban Floods; CF = Coastal Floods; LS = Landslides; EH = Extreme Heat; WF = WildFires; DR = Drought
 * Hazard level: LOW = Low; VLO = Very Low; MED = Medium; HIG = High
-* DIvision codes: <a href="">ADM0</a> <a href="">ADM1</a> <a href="">ADM2</a> 
 
 ## List of hazard types and levels for a division
 
